@@ -19,6 +19,7 @@ def get_fog():
     for doc in docs:
         fog_data = doc.to_dict()
         fog_dict[fog_data['name']] = {
+            "id" : doc.id,
             "ip" : fog_data['ip'],
             "status" : 0,
             "last_updated": None,

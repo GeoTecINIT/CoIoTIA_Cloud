@@ -75,8 +75,10 @@ mqtt_client.on_message = on_message
 
 @app.route("/getDevices", methods=['GET'])
 def get_devices():
+    print(fog_devices)
     devices = {
         device : {
+            "id" : data["id"],
             "ip" : data["ip"],
             "status" : data["status"]
         } for device, data in fog_devices.items()
