@@ -5,7 +5,9 @@ import os
 import time
 import threading
 import requests
+import json
 
+import utils
 import firebase_utils
 
 app = Flask(__name__)
@@ -75,7 +77,6 @@ mqtt_client.on_message = on_message
 
 @app.route("/getDevices", methods=['GET'])
 def get_devices():
-    print(fog_devices)
     devices = {
         device : {
             "id" : data["id"],
@@ -97,6 +98,13 @@ def get_metrics():
         "Disk": fog_info.get("disk")
     }
     return jsonify(metrics), 200
+
+@app.route("/determineRegion", methods=['POST'])
+def determine_region():
+    regions = json.loads(request.form.get("regions"))
+    sensors = json.loads(request.form.get("sensors"))
+    sensor_regions = utils.determine_sensor_region(regions, sensors)
+    return jsonify(sensor_regions), 200
 
 
 
@@ -167,6 +175,14 @@ def stop_virtual_device():
     return make_response(resp.content, resp.status_code)
 
 
+####################### TEMPLATES MANAGEMENT ###############################
+
+@app.route("/listTemplates", methods=['POST'])
+def list_templates():
+    templates = json.load(open("templates/templates.json"))
+    return jsonify(templates), 200
+
+
 
 ########################## OTHER ROUTES ####################################
 
@@ -190,6 +206,7 @@ def get_online_devices():
     target_ip = request.headers.get('X-Target-IP')
     resp = requests.post(f"http://{target_ip}:5000/getOnlineDevices", data=request.form)
     return make_response(resp.content, resp.status_code)
+
 
 
 
