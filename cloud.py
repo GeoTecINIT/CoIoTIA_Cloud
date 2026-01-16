@@ -17,6 +17,7 @@ app.config['MQTT_BROKER'] = "150.128.89.87"
 app.config['MQTT_PORT'] = 1883
 
 fog_devices = {}
+fog_id_name = {}
 
 mqtt_client = mqtt.Client()
 
@@ -36,8 +37,8 @@ def connect_mqtt():
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
-        global fog_devices
-        fog_devices = firebase_utils.get_fog()
+        global fog_devices, fog_id_name
+        fog_devices, fog_id_name = firebase_utils.get_fog()
         client.subscribe("coiotia/fog", qos=0)
         thread = threading.Thread(target=check_online)
         thread.daemon = True
@@ -143,6 +144,23 @@ def deploy_model():
 
 
 ######################### VIRTUAL DEVICE MANAGEMENT ###############################
+@app.route("/createAllVirtualDevices", methods=['POST'])
+def create_all_virtual_devices():
+    user = request.form.get("user")
+    domain = request.form.get("domain")
+    sensors = json.loads(request.form.get("sensors"))
+    virtual_type = request.form.get("virtualType")
+    sensors_per_cluster = utils.group_sensors_by_region(sensors)
+    fog_region = firebase_utils.get_fog_of_regions(user, domain)
+    for key, value in fog_region.items():
+        fog_name = fog_id_name[value]
+        fog_region[key] = fog_devices[fog_name]["ip"]
+    for region, sensors_json in sensors_per_cluster.items():
+        ip = fog_region.get(region)
+        requests.post(f"http://{ip}:5000/createVirtualDevices", data={"user": user,"sensors": json.dumps(sensors_json), "virtual_type": virtual_type})
+        
+    return jsonify({"message": "Virtual devices creation initiated"}), 200
+
 @app.route("/listVirtualDevices", methods=['POST'])
 def list_virtual_devices():
     target_ip = request.headers.get('X-Target-IP')
@@ -177,10 +195,15 @@ def stop_virtual_device():
 
 ####################### TEMPLATES MANAGEMENT ###############################
 
-@app.route("/listTemplates", methods=['POST'])
+@app.route("/listTemplates", methods=['GET'])
 def list_templates():
     templates = json.load(open("templates/templates.json"))
     return jsonify(templates), 200
+
+@app.route("/listTypes", methods=['GET'])
+def list_types():
+    types = json.load(open("virtual_device_types.json"))
+    return jsonify(types), 200
 
 
 

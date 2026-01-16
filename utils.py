@@ -7,7 +7,7 @@ def load_regions(regions):
 
 def load_sensors(sensors):
     df = pd.DataFrame(sensors)
-    gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df['longitude'], df['latitude']))
+    gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df['lon'], df['lat']))
     return gdf
 
 def determine_sensor_region(regions, sensors):
@@ -15,4 +15,10 @@ def determine_sensor_region(regions, sensors):
     sensors_gdf = load_sensors(sensors)
     sensors_regions = gpd.sjoin(sensors_gdf, regions_gdf, how="left", predicate='within')
     sensors_regions = sensors_regions.rename(columns={"name": "region"})
-    return sensors_regions[["id", "latitude", "longitude", "virtual", "mobile", "region"]].to_json(orient="records")
+    return sensors_regions[["id", "lat", "lon", "virtual", "mobile", "region"]].to_json(orient="records")
+
+
+def group_sensors_by_region(sensors):
+    df = pd.DataFrame(sensors)
+    groups = df.groupby(by="region").apply(lambda x: x.to_json(orient="records"))
+    return groups
