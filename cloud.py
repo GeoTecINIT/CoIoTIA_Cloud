@@ -164,7 +164,6 @@ def create_all_virtual_devices():
 @app.route("/listVirtualDevices", methods=['POST'])
 def list_virtual_devices():
     target_ip = request.headers.get('X-Target-IP')
-    print("Target IP:", target_ip)
     resp = requests.post(f"http://{target_ip}:5000/listVirtualDevices", data=request.form)
     return make_response(resp.content, resp.status_code)
 
