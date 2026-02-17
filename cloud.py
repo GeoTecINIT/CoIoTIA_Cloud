@@ -114,31 +114,37 @@ def determine_region():
 @app.route("/list", methods=['POST'])
 def list_models():
     target_ip = request.headers.get('X-Target-IP')
-    resp = requests.post(f"http://{target_ip}:5000/list", data=request.form)
+    resp = requests.post(f"http://{target_ip}/list", data=request.form)
     return make_response(resp.content, resp.status_code)
 
 @app.route("/upload", methods=['POST'])
 def upload_model():
     target_ip = request.headers.get('X-Target-IP')
-    resp = requests.post(f"http://{target_ip}:5000/upload", files=request.files, data=request.form)
+    files_to_forward = []
+    for field_name, file_storage in request.files.items():
+        files_to_forward.append((field_name, (file_storage.filename, file_storage.read(), file_storage.content_type)))
+    resp = requests.post(f"http://{target_ip}/upload", files=files_to_forward, data=request.form)
     return make_response(resp.content, resp.status_code)
 
 @app.route("/update", methods=['POST'])
 def update_model():
     target_ip = request.headers.get('X-Target-IP')
-    resp = requests.post(f"http://{target_ip}:5000/update", files=request.files, data=request.form)
+    files_to_forward = []
+    for field_name, file_storage in request.files.items():
+        files_to_forward.append((field_name, (file_storage.filename, file_storage.read(), file_storage.content_type)))
+    resp = requests.post(f"http://{target_ip}/update", files=files_to_forward, data=request.form)
     return make_response(resp.content, resp.status_code)
 
 @app.route("/delete", methods=['POST'])
 def delete_model():
     target_ip = request.headers.get('X-Target-IP')
-    resp = requests.post(f"http://{target_ip}:5000/delete", data=request.form)
+    resp = requests.post(f"http://{target_ip}/delete", data=request.form)
     return make_response(resp.content, resp.status_code)
 
 @app.route("/deploy", methods=['POST'])
 def deploy_model():
     target_ip = request.headers.get('X-Target-IP')
-    resp = requests.post(f"http://{target_ip}:5000/deploy", data=request.form)
+    resp = requests.post(f"http://{target_ip}/deploy", data=request.form)
     return make_response(resp.content, resp.status_code)
 
 
@@ -237,4 +243,4 @@ def get_online_devices():
 if __name__ == '__main__':
     if os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
         connect_mqtt()
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
