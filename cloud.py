@@ -6,6 +6,9 @@ import time
 import threading
 import requests
 import json
+import sys
+import logging
+from logging.handlers import RotatingFileHandler
 
 import utils
 import firebase_utils
@@ -15,6 +18,33 @@ CORS(app)
 
 app.config['MQTT_BROKER'] = "150.128.89.87"
 app.config['MQTT_PORT'] = 1883
+
+logger = logging.getLogger('CoIoTIA_Cloud')
+
+for h in app.logger.handlers:
+    app.logger.removeHandler(h)
+
+file_handler = RotatingFileHandler(
+    "cloud.log",
+    maxBytes=10 * 1024 * 1024,
+    backupCount=5
+)
+
+file_handler.setLevel(logging.INFO)
+file_handler.setFormatter(logging.Formatter(
+    "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+))
+logger.addHandler(file_handler)
+
+if sys.stdout.isatty():
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(logging.Formatter(
+        "%(asctime)s [%(levelname)s] %(message)s"
+    ))
+    logger.addHandler(console_handler)
+
+logger.setLevel(logging.INFO)
 
 fog_devices = {}
 fog_id_name = {}
@@ -43,9 +73,9 @@ def on_connect(client, userdata, flags, rc):
         thread = threading.Thread(target=check_online)
         thread.daemon = True
         thread.start()
-        print("Connected to broker")
+        logger.info("Connected to MQTT broker")
     else:
-        print("Connection failed")
+        logger.error("Connection failed")
         
 def on_message(client, userdata, message):
     content = message.payload.decode()
@@ -56,18 +86,18 @@ def on_message(client, userdata, message):
     if code == "ONLINE":
         fog_info["status"] = 1
         fog_info["last_updated"] = time.time()
-        print(f"Device {content_dict['NAME']} is online at {content_dict['IP']}")
+        logger.info(f"Device {content_dict['NAME']} is online at {content_dict['IP']}")
     elif code == "OFFLINE":
         device = content_dict["NAME"]
         fog_info["status"] = 0
-        print(f"Device {device} is offline")
+        logger.info(f"Device {device} is offline")
     else:
         fog_info["last_updated"] = time.time()
         fog_info["status"] = 1
         fog_info["cpu"] = content_dict.get("CPU")
         fog_info["ram"] = content_dict.get("RAM")
         fog_info["disk"] = content_dict.get("Disk")
-        print(f"Received metrics from {content_dict['NAME']}")
+        logger.info(f"Received metrics from {content_dict['NAME']}")
 
 
 mqtt_client.on_connect = on_connect
@@ -241,6 +271,9 @@ def get_online_devices():
 
 
 if __name__ == '__main__':
+    logger.info("===================================")
+    logger.info("      STARTING COIOTIA CLOUD       ")
+    logger.info("===================================")
     if os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
         connect_mqtt()
     app.run(host="0.0.0.0", port=5000, debug=True)
