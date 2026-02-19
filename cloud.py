@@ -19,37 +19,42 @@ CORS(app)
 app.config['MQTT_BROKER'] = "150.128.89.87"
 app.config['MQTT_PORT'] = 1883
 
-logger = logging.getLogger('CoIoTIA_Cloud')
-
-for h in app.logger.handlers:
-    app.logger.removeHandler(h)
-
-file_handler = RotatingFileHandler(
-    "cloud.log",
-    maxBytes=10 * 1024 * 1024,
-    backupCount=5
-)
-
-file_handler.setLevel(logging.INFO)
-file_handler.setFormatter(logging.Formatter(
-    "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
-))
-logger.addHandler(file_handler)
-
-if sys.stdout.isatty():
-    console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
-    console_handler.setFormatter(logging.Formatter(
-        "%(asctime)s [%(levelname)s] %(message)s"
-    ))
-    logger.addHandler(console_handler)
-
-logger.setLevel(logging.INFO)
-
 fog_devices = {}
 fog_id_name = {}
 
 mqtt_client = mqtt.Client()
+
+logger = logging.getLogger('CoIoTIA_Cloud')
+
+def setup_logger():
+    for h in app.logger.handlers:
+        app.logger.removeHandler(h)
+
+    file_handler = RotatingFileHandler(
+        "cloud.log",
+        maxBytes=10 * 1024 * 1024,
+        backupCount=5
+    )
+
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(logging.Formatter(
+        "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+    ))
+    logger.addHandler(file_handler)
+
+    if sys.stdout.isatty():
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.INFO)
+        console_handler.setFormatter(logging.Formatter(
+            "%(asctime)s [%(levelname)s] %(message)s"
+        ))
+        logger.addHandler(console_handler)
+
+    logger.setLevel(logging.INFO)
+
+    logger.info("===================================")
+    logger.info("      STARTING COIOTIA CLOUD       ")
+    logger.info("===================================")
 
 def check_online():
     current_time = time.time()
@@ -271,9 +276,7 @@ def get_online_devices():
 
 
 if __name__ == '__main__':
-    logger.info("===================================")
-    logger.info("      STARTING COIOTIA CLOUD       ")
-    logger.info("===================================")
+    setup_logger()
     if os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
         connect_mqtt()
     app.run(host="0.0.0.0", port=5000, debug=True)
