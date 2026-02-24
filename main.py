@@ -1,7 +1,6 @@
 from waitress import serve
-from cloud import app, connect_mqtt, setup_logger
+from cloud import app, connect_mqtt
 
-setup_logger()
 connect_mqtt()
 
 if __name__ == "__main__":

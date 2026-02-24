@@ -1,15 +1,14 @@
-from flask import Flask, request, jsonify, make_response
+from flask import Flask, request, jsonify, make_response, Response
 from flask_cors import CORS
 import paho.mqtt.client as mqtt
 import os
 import time
-import threading
 import requests
 import json
-import sys
-import logging
-from logging.handlers import RotatingFileHandler
+from apscheduler.schedulers.background import BackgroundScheduler
 
+from Announcer import Announcer
+from Logger import Logger
 import utils
 import firebase_utils
 
@@ -22,46 +21,26 @@ app.config['MQTT_PORT'] = 1883
 fog_devices = {}
 fog_id_name = {}
 
+announcer = Announcer()
+logger = Logger("CoIoTIA_Cloud", app)
+
 mqtt_client = mqtt.Client()
 
-logger = logging.getLogger('CoIoTIA_Cloud')
-
-def setup_logger():
-    for h in app.logger.handlers:
-        app.logger.removeHandler(h)
-
-    file_handler = RotatingFileHandler(
-        "cloud.log",
-        maxBytes=10 * 1024 * 1024,
-        backupCount=5
-    )
-
-    file_handler.setLevel(logging.INFO)
-    file_handler.setFormatter(logging.Formatter(
-        "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
-    ))
-    logger.addHandler(file_handler)
-
-    if sys.stdout.isatty():
-        console_handler = logging.StreamHandler()
-        console_handler.setLevel(logging.INFO)
-        console_handler.setFormatter(logging.Formatter(
-            "%(asctime)s [%(levelname)s] %(message)s"
-        ))
-        logger.addHandler(console_handler)
-
-    logger.setLevel(logging.INFO)
-
-    logger.info("===================================")
-    logger.info("      STARTING COIOTIA CLOUD       ")
-    logger.info("===================================")
+logger.logger.info("===================================")
+logger.logger.info("      STARTING COIOTIA CLOUD       ")
+logger.logger.info("===================================")
 
 def check_online():
+    print("Checking...")
     current_time = time.time()
     for device, data in fog_devices.items():
         if data["last_updated"] is not None and current_time - data["last_updated"] > 60:
             data["status"] = 0
             print(f"Device {device} is offline due to timeout")
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(func=check_online, trigger="interval", seconds=2)
+scheduler.start()
 
 def connect_mqtt():
     try:
@@ -75,12 +54,9 @@ def on_connect(client, userdata, flags, rc):
         global fog_devices, fog_id_name
         fog_devices, fog_id_name = firebase_utils.get_fog()
         client.subscribe("coiotia/fog", qos=0)
-        thread = threading.Thread(target=check_online)
-        thread.daemon = True
-        thread.start()
-        logger.info("Connected to MQTT broker")
+        logger.logger.info("Connected to MQTT broker")
     else:
-        logger.error("Connection failed")
+        logger.logger.error("Connection failed")
         
 def on_message(client, userdata, message):
     content = message.payload.decode()
@@ -91,18 +67,27 @@ def on_message(client, userdata, message):
     if code == "ONLINE":
         fog_info["status"] = 1
         fog_info["last_updated"] = time.time()
-        logger.info(f"Device {content_dict['NAME']} is online at {content_dict['IP']}")
+        logger.logger.info(f"Device {content_dict['NAME']} is online at {content_dict['IP']}")
     elif code == "OFFLINE":
         device = content_dict["NAME"]
         fog_info["status"] = 0
-        logger.info(f"Device {device} is offline")
+        logger.logger.info(f"Device {device} is offline")
     else:
         fog_info["last_updated"] = time.time()
         fog_info["status"] = 1
         fog_info["cpu"] = content_dict.get("CPU")
         fog_info["ram"] = content_dict.get("RAM")
         fog_info["disk"] = content_dict.get("Disk")
-        logger.info(f"Received metrics from {content_dict['NAME']}")
+        logger.logger.info(f"Received metrics from {content_dict['NAME']}")
+    announcer.set(
+        {
+            device: {
+                "id" : data["id"],
+                "ip" : data["ip"],
+                "status" : data["status"]
+            } for device, data in fog_devices.items()
+        }
+    )
 
 
 mqtt_client.on_connect = on_connect
@@ -113,14 +98,20 @@ mqtt_client.on_message = on_message
 
 @app.route("/getDevices", methods=['GET'])
 def get_devices():
-    devices = {
-        device : {
-            "id" : data["id"],
-            "ip" : data["ip"],
-            "status" : data["status"]
-        } for device, data in fog_devices.items()
-    }
-    return jsonify(devices)
+    def stream():
+        devices = {
+            device: {
+                "id" : data["id"],
+                "ip" : data["ip"],
+                "status" : data["status"]
+            } for device, data in fog_devices.items()
+        }
+        yield f"data: {json.dumps(devices)}\n\n"
+        while True:
+            devices = announcer.get()
+            yield f"data: {json.dumps(devices)}\n\n"
+
+    return Response(stream(), mimetype='text/event-stream')
 
 @app.route("/getMetrics", methods=['GET'])
 def get_metrics():
@@ -196,9 +187,9 @@ def create_all_virtual_devices():
     for key, value in fog_region.items():
         fog_name = fog_id_name[value]
         fog_region[key] = fog_devices[fog_name]["ip"]
-    for region, sensors_json in sensors_per_cluster.items():
-        ip = fog_region.get(region)
-        requests.post(f"http://{ip}:5000/createVirtualDevices", data={"user": user,"sensors": json.dumps(sensors_json), "virtual_type": virtual_type})
+    # for region, sensors_json in sensors_per_cluster.items():
+    #     ip = fog_region.get(region)
+    #     requests.post(f"http://{ip}:5000/createVirtualDevices", data={"user": user,"sensors": json.dumps(sensors_json), "virtual_type": virtual_type})
         
     return jsonify({"message": "Virtual devices creation initiated"}), 200
 
@@ -276,7 +267,6 @@ def get_online_devices():
 
 
 if __name__ == '__main__':
-    setup_logger()
     if os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
         connect_mqtt()
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True, use_reloader=False)
