@@ -6,7 +6,9 @@ from logging.handlers import RotatingFileHandler
 class Logger:
     def __init__(self, name, app):
         self.logger = logging.getLogger(name)
+        self.name = name
         self.app = app
+        self.setup_logger()
 
     def setup_logger(self):
         for h in self.app.logger.handlers:

@@ -31,15 +31,23 @@ logger.logger.info("      STARTING COIOTIA CLOUD       ")
 logger.logger.info("===================================")
 
 def check_online():
-    print("Checking...")
     current_time = time.time()
     for device, data in fog_devices.items():
         if data["last_updated"] is not None and current_time - data["last_updated"] > 60:
             data["status"] = 0
-            print(f"Device {device} is offline due to timeout")
+            announcer.set(
+                {
+                    device: {
+                        "id" : data["id"],
+                        "ip" : data["ip"],
+                        "status" : data["status"]
+                    } for device, data in fog_devices.items()
+                }
+            )
+            logger.logger.info(f"Device {device} is offline due to timeout")
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=check_online, trigger="interval", seconds=2)
+scheduler.add_job(func=check_online, trigger="interval", seconds=60)
 scheduler.start()
 
 def connect_mqtt():
