@@ -7,15 +7,15 @@ import requests
 import json
 from apscheduler.schedulers.background import BackgroundScheduler
 
-from Announcer import Announcer
-from Logger import Logger
+from services.Announcer import Announcer
+from services.Logger import Logger
 import utils
 import firebase_utils
 
 app = Flask(__name__)
 CORS(app)
 
-app.config['MQTT_BROKER'] = "150.128.89.87"
+app.config['MQTT_BROKER'] = "150.128.97.47"
 app.config['MQTT_PORT'] = 1883
 
 fog_devices = {}
@@ -125,7 +125,7 @@ def get_devices():
 def get_metrics():
     device = request.args.get("device")
     if not device or device not in fog_devices:
-        return jsonify({"error": "Invalid or missing device"}), 400
+        return jsonify({"error": "5"}), 400
     fog_info = fog_devices[device]
     metrics = {
         "CPU": fog_info.get("cpu"),

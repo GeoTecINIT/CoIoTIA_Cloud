@@ -4,16 +4,12 @@ from logging.handlers import RotatingFileHandler
 
 
 class Logger:
-    def __init__(self, name, app):
+    def __init__(self, name):
         self.logger = logging.getLogger(name)
         self.name = name
-        self.app = app
         self.setup_logger()
 
     def setup_logger(self):
-        for h in self.app.logger.handlers:
-            self.app.logger.removeHandler(h)
-
         file_handler = RotatingFileHandler(
             f"{self.name}.log",
             maxBytes=10 * 1024 * 1024,
@@ -35,3 +31,9 @@ class Logger:
             self.logger.addHandler(console_handler)
 
         self.logger.setLevel(logging.INFO)
+
+    def info(self, message):
+        self.logger.info(message)
+
+    def error(self, message):
+        self.logger.error(message)
