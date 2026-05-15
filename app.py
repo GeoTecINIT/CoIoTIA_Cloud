@@ -5,14 +5,15 @@ from contextlib import asynccontextmanager
 import asyncio
 from asyncio import Queue
 import time
+import os
 
 from services.Logger import Logger
 from services.MQTTService import MQTTService
 
 import firebase_utils
 
-MQTT_BROKER = "150.128.97.47"
-MQTT_PORT = 1883
+MQTT_BROKER = os.getenv("MQTT_BROKER", "150.128.97.47")
+MQTT_PORT = int(os.getenv("MQTT_PORT", 1883))
 
 async def check_online_task(app: FastAPI):
     current_time = time.time()
