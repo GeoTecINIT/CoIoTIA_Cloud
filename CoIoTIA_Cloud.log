@@ -167,3 +167,28 @@
 2026-05-06 14:16:05,540 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
 2026-05-06 14:17:05,539 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
 2026-05-06 14:18:05,541 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-05-20 17:43:30,731 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:43:30,732 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-05-20 17:43:30,732 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:43:53,151 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:43:53,151 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-05-20 17:43:53,151 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:43:59,424 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:43:59,424 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-05-20 17:43:59,424 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:45:00,411 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:45:00,411 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-05-20 17:45:00,411 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:45:00,959 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-05-20 17:54:04,779 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:54:04,779 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-05-20 17:54:04,779 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:54:05,268 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-05-20 17:54:18,164 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:54:18,164 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-05-20 17:54:18,164 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:54:18,493 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-05-20 17:55:29,192 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:55:29,192 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-05-20 17:55:29,192 [INFO] CoIoTIA_Cloud: ===================================
+2026-05-20 17:55:29,520 [INFO] CoIoTIA_Cloud: Connected to MQTT broker

@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes import models, virtual_devices, cloud, extra
+from api.routes import models, virtual_devices, cloud, extra, federated
 from contextlib import asynccontextmanager
 import asyncio
 from asyncio import Queue
@@ -67,3 +67,4 @@ app.include_router(models.router, prefix="/models")
 app.include_router(virtual_devices.router, prefix="/virtual")
 app.include_router(cloud.router)
 app.include_router(extra.router)
+app.include_router(federated.router, prefix="/federated")
