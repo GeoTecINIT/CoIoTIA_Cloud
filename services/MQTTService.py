@@ -34,7 +34,7 @@ class MQTTService:
             await self.client_cm.__aexit__(None, None, None)
             self.logger.info("Disconnected from MQTT broker")
 
-    async def _listen(self):
+    async def __listen(self):
         async with self.client.messages as messages:
             async for message in messages:
                 await self.__handle_message(message)
@@ -60,7 +60,7 @@ class MQTTService:
             self.__offline(fog_info, content_dict)
         else:
             self.__status(fog_info, content_dict)
-            
+
         await self.event_queue.put(
             {
                 device: {
