@@ -37,6 +37,26 @@ async def list_all_federated_devices(request: Request):
     return JSONResponse(devices)
 
 
+@router.post("/server/start")
+async def server_start(x_target_ip: str = Header(...)):
+    async with httpx.AsyncClient(timeout=300.0) as client:
+        try:
+            resp = await client.post(f"http://{x_target_ip}/federated/server/start")
+            return JSONResponse(resp.json(), status_code=resp.status_code)
+        except Exception as exc:
+            return JSONResponse({"status": "error", "detail": str(exc)}, status_code=503)
+
+
+@router.post("/server/stop")
+async def server_stop(x_target_ip: str = Header(...)):
+    async with httpx.AsyncClient(timeout=30.0) as client:
+        try:
+            resp = await client.post(f"http://{x_target_ip}/federated/server/stop")
+            return JSONResponse(resp.json(), status_code=resp.status_code)
+        except Exception as exc:
+            return JSONResponse({"status": "error", "detail": str(exc)}, status_code=503)
+
+
 @router.get("/server/status")
 async def server_status(fog_ip: str):
     async with httpx.AsyncClient() as client:
