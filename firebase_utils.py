@@ -39,6 +39,7 @@ def get_fog_of_regions(user, domain):
     fog_regions = {}
     for doc in docs:
         polygon = json.loads(doc.to_dict().get('polygon'))
-        fog_regions[polygon["properties"]["name"]] = doc.to_dict().get('fog')
+        region_name = polygon.get("properties", {}).get("name", doc.id)
+        fog_regions[region_name] = doc.to_dict().get('fog')
 
     return fog_regions

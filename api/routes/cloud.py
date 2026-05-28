@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Request, UploadFile, File
+from fastapi import APIRouter, Request, UploadFile, File, Form
 from fastapi.responses import JSONResponse, StreamingResponse
 import json
 import os
@@ -59,9 +59,8 @@ async def list_types():
 
 
 @router.post("/determineRegion")
-async def determine_region(request: Request, regions: UploadFile = File(...), sensors: UploadFile = File(...)):
-    form = await request.form()
-    regions = json.loads(form.get("regions"))
-    sensors = json.loads(form.get("sensors"))
-    sensor_regions = utils.determine_sensor_region(regions, sensors)
-    return sensor_regions
+async def determine_region(regions: str = Form(...), sensors: str = Form(...)):
+    regions_data = json.loads(regions)
+    sensors_data = json.loads(sensors)
+    sensor_regions = utils.determine_sensor_region(regions_data, sensors_data)
+    return JSONResponse(json.loads(sensor_regions))
