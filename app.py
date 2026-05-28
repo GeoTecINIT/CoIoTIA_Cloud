@@ -7,6 +7,9 @@ from asyncio import Queue
 import time
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from services.Logger import Logger
 from services.MQTTService import MQTTService
 
