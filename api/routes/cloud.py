@@ -1,10 +1,14 @@
-from fastapi import APIRouter, Request, UploadFile, File
+from fastapi import APIRouter, Request, UploadFile, File, Form
 from fastapi.responses import JSONResponse, StreamingResponse
 import json
+import os
 
 import utils
 
 router = APIRouter()
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 @router.get("/getDevices")
 async def get_devices(request: Request):
@@ -40,10 +44,23 @@ async def get_metrics(request: Request, device: str):
     return JSONResponse(content=metrics, status_code=200)
 
 
+@router.get("/listTemplates")
+async def list_templates():
+    with open(os.path.join(BASE_DIR, "templates", "templates.json")) as f:
+        templates = json.load(f)
+    return JSONResponse(content=templates, status_code=200)
+
+
+@router.get("/listTypes")
+async def list_types():
+    with open(os.path.join(BASE_DIR, "virtual_device_types.json")) as f:
+        types = json.load(f)
+    return JSONResponse(content=types, status_code=200)
+
+
 @router.post("/determineRegion")
-async def determine_region(request: Request, regions: UploadFile = File(...), sensors: UploadFile = File(...)):
-    form = await request.form()
-    regions = json.loads(form.get("regions"))
-    sensors = json.loads(form.get("sensors"))
-    sensor_regions = utils.determine_sensor_region(regions, sensors)
-    return sensor_regions
+async def determine_region(regions: str = Form(...), sensors: str = Form(...)):
+    regions_data = json.loads(regions)
+    sensors_data = json.loads(sensors)
+    sensor_regions = utils.determine_sensor_region(regions_data, sensors_data)
+    return JSONResponse(json.loads(sensor_regions))

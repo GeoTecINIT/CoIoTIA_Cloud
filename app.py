@@ -1,18 +1,21 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routes import models, virtual_devices, cloud, extra
+from api.routes import models, virtual_devices, cloud, extra, federated
 from contextlib import asynccontextmanager
 import asyncio
 from asyncio import Queue
 import time
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from services.Logger import Logger
 from services.MQTTService import MQTTService
 
 import firebase_utils
 
-MQTT_BROKER = os.getenv("MQTT_BROKER", "150.128.97.47")
+MQTT_BROKER = os.getenv("MQTT_BROKER", "localhost")
 MQTT_PORT = int(os.getenv("MQTT_PORT", 1883))
 
 async def check_online_task(app: FastAPI):
@@ -67,3 +70,4 @@ app.include_router(models.router, prefix="/models")
 app.include_router(virtual_devices.router, prefix="/virtual")
 app.include_router(cloud.router)
 app.include_router(extra.router)
+app.include_router(federated.router, prefix="/federated")

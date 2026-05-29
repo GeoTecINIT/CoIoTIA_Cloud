@@ -1,19 +1,9 @@
 from fastapi import APIRouter, Header, File, Request, Response, UploadFile
 import httpx
 
+from api.utils import forward_request
+
 router = APIRouter()
-
-async def forward_request(path: str, request: Request, x_target_ip: str, files=None):
-    form = await request.form()
-
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            f"http://{x_target_ip}/{path}",
-            data=form,
-            files=files
-        )
-
-    return Response(content=resp.content, status_code=resp.status_code)
 
 
 @router.post("/list")
@@ -41,5 +31,5 @@ async def delete_model(request: Request, x_target_ip: str = Header(...)):
     return await forward_request("delete", request, x_target_ip)
 
 @router.post("/deploy")
-async def deploy_model(request: Request, x_target_ip: str):
+async def deploy_model(request: Request, x_target_ip: str = Header(...)):
     return await forward_request("deploy", request, x_target_ip)

@@ -2,6 +2,7 @@ from aiomqtt import Client
 import asyncio
 import time
 
+
 class MQTTService:
     def __init__(self, broker, port, event_queue, logger, fog_devices):
         self.broker = broker
@@ -53,6 +54,8 @@ class MQTTService:
         content_dict = dict(item.split(":") for item in content.split(";")[1:])
 
         fog_info = self.fog_devices.get(content_dict["NAME"])
+        if fog_info is None:
+            return
 
         if code == "ONLINE":
             self.__online(fog_info, content_dict)
@@ -64,10 +67,11 @@ class MQTTService:
         await self.event_queue.put(
             {
                 device: {
-                    "id" : data["id"],
-                    "ip" : data["ip"],
-                    "status" : data["status"]
-                } for device, data in self.fog_devices.items()
+                    "id": data["id"],
+                    "ip": data["ip"],
+                    "status": data["status"],
+                }
+                for device, data in self.fog_devices.items()
             }
         )
 
