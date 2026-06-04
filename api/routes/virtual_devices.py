@@ -105,6 +105,7 @@ async def list_virtual_devices(request: Request, x_target_ip: str = Header(...))
 
 @router.post("/create")
 async def create_virtual_devices(request: Request, x_target_ip: str = Header(...)):
+    request.app.state.logger.info(f"Received request to create virtual device on {x_target_ip}")
     form = await request.form()
     request.app.state.logger.info("Creating virtual device")
 
