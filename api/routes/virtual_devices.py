@@ -106,6 +106,7 @@ async def list_virtual_devices(request: Request, x_target_ip: str = Header(...))
 @router.post("/create")
 async def create_virtual_devices(request: Request, x_target_ip: str = Header(...)):
     form = await request.form()
+    request.app.state.logger.info("Creating virtual device")
 
     async with httpx.AsyncClient() as client:
         resp = await client.post(
