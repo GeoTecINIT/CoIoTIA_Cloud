@@ -239,3 +239,7 @@
 2026-06-05 09:37:18,405 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
 2026-06-05 09:37:18,405 [INFO] CoIoTIA_Cloud: ===================================
 2026-06-05 09:37:18,994 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-06-05 09:42:56,357 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:42:56,357 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:42:56,357 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:42:56,775 [INFO] CoIoTIA_Cloud: Connected to MQTT broker

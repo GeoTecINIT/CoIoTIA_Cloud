@@ -108,12 +108,14 @@ async def create_virtual_devices(request: Request, x_target_ip: str = Header(...
     form = dict(await request.form())
 
     async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            f"http://{x_target_ip}/virtual/create",
-            data=form,
-        )
-
-    return Response(content=resp.content, status_code=resp.status_code)
+        try:
+            resp = await client.post(
+                f"http://{x_target_ip}/virtual/create",
+                data=form,
+            )
+            return Response(content=resp.content, status_code=resp.status_code)
+        except Exception as exc:
+            return JSONResponse({"status": "error", "detail": str(exc)}, status_code=503)
 
 
 @router.post("/delete")
