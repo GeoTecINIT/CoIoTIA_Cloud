@@ -15,7 +15,7 @@ from services.MQTTService import MQTTService
 
 import firebase_utils
 
-MQTT_BROKER = os.getenv("MQTT_BROKER", "localhost")
+MQTT_BROKER = os.getenv("MQTT_BROKER", "aiotserver.uji.es")
 MQTT_PORT = int(os.getenv("MQTT_PORT", 1883))
 
 async def check_online_task(app: FastAPI):

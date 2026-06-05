@@ -206,3 +206,36 @@
 2026-06-04 13:40:47,706 [INFO] CoIoTIA_Cloud: ===================================
 2026-06-04 13:40:47,706 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
 2026-06-04 13:40:47,706 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:25:05,580 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:25:05,580 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:25:05,580 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:25:44,610 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:25:44,610 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:25:44,610 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:25:44,963 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-06-05 09:29:15,059 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:29:15,059 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:29:15,059 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:29:15,410 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-06-05 09:31:19,333 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:31:19,333 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:31:19,333 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:31:19,826 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-06-05 09:33:46,428 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:33:46,428 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:33:46,428 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:33:46,808 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-06-05 09:33:48,918 [INFO] CoIoTIA_Cloud: Received request to create virtual devices with headers:
+2026-06-05 09:33:48,919 [INFO] CoIoTIA_Cloud: Form data received for creating virtual devices:
+2026-06-05 09:34:15,754 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:34:15,754 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:34:15,754 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:34:16,017 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-06-05 09:36:30,968 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:36:30,968 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:36:30,968 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:36:31,430 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
+2026-06-05 09:37:18,405 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:37:18,405 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-06-05 09:37:18,405 [INFO] CoIoTIA_Cloud: ===================================
+2026-06-05 09:37:18,994 [INFO] CoIoTIA_Cloud: Connected to MQTT broker
