@@ -108,6 +108,8 @@ async def create_virtual_devices(request: Request, x_target_ip: str = Header(...
     request.app.state.logger.info(f"Received request to create virtual devices on {x_target_ip}")
     form = dict(await request.form())
     request.app.state.logger.info(f"Form data received for creating virtual devices: {form}")
+    url = f"http://{x_target_ip}/virtual/create"
+    request.app.state.logger.info(f"Forwarding request to {url}")
 
     async with httpx.AsyncClient() as client:
         try:
