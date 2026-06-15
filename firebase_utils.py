@@ -1,7 +1,6 @@
 import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
-
+from firebase_admin import credentials, firestore, auth
+from fastapi import HTTPException
 import json
 
 cred = credentials.Certificate("credentials.json")
@@ -9,6 +8,19 @@ cred = credentials.Certificate("credentials.json")
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
+
+def verify_firebase_token(authorization: str) -> str:
+    try:
+        # El header suele venir como "Bearer <token>"
+        token = authorization.replace("Bearer ", "")
+        decoded = auth.verify_id_token(token)
+        return decoded["uid"]
+    except auth.ExpiredIdTokenError:
+        raise HTTPException(status_code=401, detail="Token expirado")
+    except auth.InvalidIdTokenError:
+        raise HTTPException(status_code=401, detail="Token inválido")
+    except Exception:
+        raise HTTPException(status_code=401, detail="Error de autenticación")
 
 
 def get_fog():

@@ -116,6 +116,7 @@ async def create_virtual_devices(request: Request, x_target_ip: str = Header(...
             resp = await client.post(
                 f"http://{x_target_ip}/virtual/create",
                 data=form,
+                timeout=300.0
             )
             return Response(content=resp.content, status_code=resp.status_code)
         except Exception as exc:
