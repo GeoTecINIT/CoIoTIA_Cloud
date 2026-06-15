@@ -11,18 +11,13 @@ class MQTTService:
         self.event_queue = event_queue
         self.logger = logger
         self.fog_devices = fog_devices
-        self._task = None
 
         self.client = None
-        self.client_cm = None
         self.__task = None
 
     async def connect(self):
-        self.client_cm = Client(self.broker, self.port)
-        self.client = await self.client_cm.__aenter__()
-        await self.client.subscribe("coiotia/fog", qos=0)
-        self.logger.info("Connected to MQTT broker")
         self.__task = asyncio.create_task(self.__listen())
+        self.logger.info("Listener task created")
 
     async def disconnect(self):
         if self.__task:
@@ -31,19 +26,31 @@ class MQTTService:
                 await self.__task
             except asyncio.CancelledError:
                 pass
-        if self.client_cm:
-            await self.client_cm.__aexit__(None, None, None)
             self.logger.info("Disconnected from MQTT broker")
 
     async def __listen(self):
-        async with self.client.messages as messages:
-            async for message in messages:
-                await self.__handle_message(message)
+        try:
+            async with Client(self.broker, self.port) as client:
+                self.client = client
+                await client.subscribe("coiotia/fog", qos=0)
+                self.logger.info("Connected and subscribed")
+                async for message in client.messages:
+                    await self.__handle_message(message)
+        except asyncio.CancelledError:
+            raise
+        except Exception as e:
+            self.logger.error(f"Listener error: {e}")
 
     async def publish(self, topic: str, message: str):
+        if self.client is None:
+            self.logger.warning("MQTT client not connected")
+            return
         await self.client.publish(topic, message)
 
     async def subscribe(self, topic: str):
+        if self.client is None:
+            self.logger.warning("MQTT client not connected")
+            return
         await self.client.subscribe(topic)
 
     async def __handle_message(self, message):

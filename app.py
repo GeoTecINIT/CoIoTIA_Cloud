@@ -47,12 +47,15 @@ async def lifespan(app: FastAPI):
     
     app.state.event_queue = Queue(maxsize=5)
     app.state.fog_devices, app.state.fog_id_name = firebase_utils.get_fog()
+    app.state.logger.info(f"Loaded {len(app.state.fog_devices)} fog devices from Firestore")
     app.state.mqtt = MQTTService(MQTT_BROKER, MQTT_PORT, app.state.event_queue, app.state.logger, app.state.fog_devices)
-    app.state.check_online_task = asyncio.create_task(check_online_task(app))
-    await app.state.mqtt.connect()
 
+    await app.state.mqtt.connect()
+    app.state.check_online_task = asyncio.create_task(check_online_task(app))
+    
     yield
     
+    await app.state.check_online_task.cancel()
     await app.state.mqtt.disconnect()
 
 
