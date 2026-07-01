@@ -9,9 +9,8 @@ class FirebaseService:
         firebase_admin.initialize_app(cred)
         self.db = firestore.client()
 
-    def verify_firebase_token(self, authorization: str) -> str:
+    def verify_firebase_token(self, token: str) -> str:
         try:
-            token = authorization.replace("Bearer ", "")
             decoded = auth.verify_id_token(token)
             return decoded["uid"]
         except auth.ExpiredIdTokenError:

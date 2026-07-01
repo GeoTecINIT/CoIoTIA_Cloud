@@ -1,7 +1,9 @@
 from fastapi import APIRouter, Request, UploadFile, File, Form
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse, Response
 import json
 import os
+
+from model.EdgeDevice import EdgeDevice
 
 import utils
 
@@ -64,3 +66,15 @@ async def determine_region(regions: str = Form(...), sensors: str = Form(...)):
     sensors_data = json.loads(sensors)
     sensor_regions = utils.determine_sensor_region(regions_data, sensors_data)
     return JSONResponse(json.loads(sensor_regions))
+
+
+@router.post("/downloadConfig")
+async def download_config(request: Request):
+    form = await request.form()
+    device = EdgeDevice(form['name'], form['mac'], form['domain'], form['analysis_type'], form['data_type'])
+    config_file = device.to_config_file()
+    return Response(
+        content=config_file,
+        media_type='text/plain',
+        headers={"Content-Disposition": "attachment; filename=config.cfg"}
+    )

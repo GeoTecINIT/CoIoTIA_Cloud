@@ -5,8 +5,8 @@ import asyncio
 import json
 
 import utils
-import firebase_utils
-from api.utils import build_fog_url
+from api.utils import forward_request, build_fog_url
+from api.auth import get_token
 
 router = APIRouter()
 
@@ -29,7 +29,7 @@ async def create_all_virtual_devices(request: Request):
     start = form.get("start", "false")
 
     sensors_per_cluster = utils.group_sensors_by_region(sensors)
-    fog_region = firebase_utils.get_fog_of_regions(user, domain)
+    fog_region = request.app.state.firebase.get_fog_of_regions(user, domain)
 
     for key, value in fog_region.items():
         fog_name = request.app.state.fog_id_name[value]
@@ -91,87 +91,33 @@ async def create_all_virtual_devices(request: Request):
 
 
 @router.post("/list")
-async def list_virtual_devices(request: Request, x_target_ip: str = Header(...)):
-    form = await request.form()
-
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            f"http://{x_target_ip}/virtual/list",
-            data=form,
-        )
-
-    return Response(content=resp.content, status_code=resp.status_code)
+async def list_virtual_devices(request: Request, x_target_ip: str = Header(...), authorization: str = Header(...)):
+    token = get_token(authorization)
+    uid = request.app.state.firebase.verify_firebase_token(token)
+    return await forward_request("virtual/list", request, x_target_ip, uid=uid)
 
 
 @router.post("/create")
-async def create_virtual_devices(request: Request, x_target_ip: str = Header(...)):
-    request.app.state.logger.info(f"Received request to create virtual devices on {x_target_ip}")
-    form = dict(await request.form())
-    request.app.state.logger.info(f"Form data received for creating virtual devices: {form}")
-    url = f"http://{x_target_ip}/virtual/create"
-    request.app.state.logger.info(f"Forwarding request to {url}")
-
-    async with httpx.AsyncClient() as client:
-        try:
-            resp = await client.post(
-                f"http://{x_target_ip}/virtual/create",
-                data=form,
-                timeout=300.0
-            )
-            return Response(content=resp.content, status_code=resp.status_code)
-        except Exception as exc:
-            return JSONResponse({"status": "error", "detail": str(exc)}, status_code=503)
+async def create_virtual_devices(request: Request, x_target_ip: str = Header(...), authorization: str = Header(...)):
+    token = get_token(authorization)
+    uid = request.app.state.firebase.verify_firebase_token(token)
+    return await forward_request("virtual/create", request, x_target_ip, uid=uid)
 
 
 @router.post("/delete")
 async def delete_virtual_devices(request: Request, x_target_ip: str = Header(...)):
-    form = await request.form()
-
-    async with httpx.AsyncClient() as client:
-        try:
-            resp = await client.post(
-                f"http://{x_target_ip}/virtual/delete",
-                data=form,
-            )
-            return Response(content=resp.content, status_code=resp.status_code)
-        except Exception as exc:
-            return JSONResponse({"status": "error", "detail": str(exc)}, status_code=503)   
+    return await forward_request("virtual/delete", request, x_target_ip)   
 
 
 @router.post("/start")
 async def start_virtual_devices(request: Request, x_target_ip: str = Header(...)):
-    form = await request.form()
-
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            f"http://{x_target_ip}/virtual/start",
-            data=form,
-        )
-
-    return Response(content=resp.content, status_code=resp.status_code)
+    return await forward_request("virtual/start", request, x_target_ip)
 
 
 @router.post("/stop")
 async def stop_virtual_devices(request: Request, x_target_ip: str = Header(...)):
-    form = await request.form()
-
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            f"http://{x_target_ip}/virtual/stop",
-            data=form,
-        )
-
-    return Response(content=resp.content, status_code=resp.status_code)
-
+    return await forward_request("virtual/stop", request, x_target_ip)
 
 @router.post("/online")
 async def get_online_devices(request: Request, x_target_ip: str = Header(...)):
-    form = await request.form()
-
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            f"http://{x_target_ip}/virtual/online",
-            data=form,
-        )
-
-    return Response(content=resp.content, status_code=resp.status_code)
+    return await forward_request("virtual/online", request, x_target_ip)

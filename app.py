@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
 from api.routes import models, virtual_devices, cloud, extra, federated
 from contextlib import asynccontextmanager
 import asyncio
@@ -12,6 +13,7 @@ load_dotenv()
 
 from services.Logger import Logger
 from services.MQTTService import MQTTService
+from services.FirebaseService import FirebaseService
 
 import firebase_utils
 
@@ -40,13 +42,14 @@ async def check_online_task(app: FastAPI):
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     app.state.logger = Logger("CoIoTIA_Cloud")
+    app.state.firebase = FirebaseService()
 
     app.state.logger.info("===================================")
     app.state.logger.info("      STARTING COIOTIA CLOUD       ")
     app.state.logger.info("===================================")
     
     app.state.event_queue = Queue(maxsize=5)
-    app.state.fog_devices, app.state.fog_id_name = firebase_utils.get_fog()
+    app.state.fog_devices, app.state.fog_id_name = app.state.firebase.get_fog()
     app.state.logger.info(f"Loaded {len(app.state.fog_devices)} fog devices from Firestore")
     app.state.mqtt = MQTTService(MQTT_BROKER, MQTT_PORT, app.state.event_queue, app.state.logger, app.state.fog_devices)
 
