@@ -15,11 +15,6 @@ from services.Logger import Logger
 from services.MQTTService import MQTTService
 from services.FirebaseService import FirebaseService
 
-import firebase_utils
-
-MQTT_BROKER = os.getenv("MQTT_BROKER", "aiotserver.uji.es")
-MQTT_PORT = int(os.getenv("MQTT_PORT", 1883))
-
 async def check_online_task(app: FastAPI):
     current_time = time.time()
     for device, data in app.state.fog_devices.items():
@@ -51,7 +46,7 @@ async def lifespan(app: FastAPI):
     app.state.event_queue = Queue(maxsize=5)
     app.state.fog_devices, app.state.fog_id_name = app.state.firebase.get_fog()
     app.state.logger.info(f"Loaded {len(app.state.fog_devices)} fog devices from Firestore")
-    app.state.mqtt = MQTTService(MQTT_BROKER, MQTT_PORT, app.state.event_queue, app.state.logger, app.state.fog_devices)
+    app.state.mqtt = MQTTService(os.getenv("MQTT_BROKER", "aiotserver.uji.es"), int(os.getenv("MQTT_PORT", 1883)), app.state.event_queue, app.state.logger, app.state.fog_devices)
 
     await app.state.mqtt.connect()
     app.state.check_online_task = asyncio.create_task(check_online_task(app))
