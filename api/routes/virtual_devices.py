@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Request, Response, Header
+from fastapi import APIRouter, Depends, Request, Response, Header
 from fastapi.responses import JSONResponse
 import httpx
 import asyncio
@@ -91,15 +91,13 @@ async def create_all_virtual_devices(request: Request):
 
 
 @router.post("/list")
-async def list_virtual_devices(request: Request, x_target_ip: str = Header(...), authorization: str = Header(...)):
-    token = get_token(authorization)
+async def list_virtual_devices(request: Request, x_target_ip: str = Header(...), token: str = Depends(get_token)):
     uid = request.app.state.firebase.verify_firebase_token(token)
     return await forward_request("virtual/list", request, x_target_ip, uid=uid)
 
 
 @router.post("/create")
-async def create_virtual_devices(request: Request, x_target_ip: str = Header(...), authorization: str = Header(...)):
-    token = get_token(authorization)
+async def create_virtual_devices(request: Request, x_target_ip: str = Header(...), token: str = Depends(get_token)):
     uid = request.app.state.firebase.verify_firebase_token(token)
     return await forward_request("virtual/create", request, x_target_ip, uid=uid)
 

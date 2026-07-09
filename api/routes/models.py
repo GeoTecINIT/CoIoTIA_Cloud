@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Header, File, Request, Response, UploadFile
+from fastapi import APIRouter, Depends, Header, File, Request, Response, UploadFile
 from api.auth import get_token
 
 from api.utils import forward_request
@@ -7,14 +7,12 @@ router = APIRouter()
 
 
 @router.get("/list")
-async def list_models(request: Request, x_target_ip: str = Header(...), authorization: str = Header(...)):
-    token = get_token(authorization)
+async def list_models(request: Request, x_target_ip: str = Header(...), token: str = Depends(get_token)):
     uid = request.app.state.firebase.verify_firebase_token(token)
     return await forward_request("models/list", request, x_target_ip, uid=uid)
 
 @router.post("/upload")
-async def upload_model(request: Request, x_target_ip: str = Header(...), authorization: str = Header(...), model: UploadFile = File(...), code: UploadFile = File(...)):
-    token = get_token(authorization)
+async def upload_model(request: Request, x_target_ip: str = Header(...), token: str = Depends(get_token), model: UploadFile = File(...), code: UploadFile = File(...)):
     uid = request.app.state.firebase.verify_firebase_token(token)
     model_content = await model.read()
     code_content = await code.read()
