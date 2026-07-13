@@ -9,12 +9,12 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
 
     async with httpx.AsyncClient() as client:
         if request.method == "GET":
+            print(f"http://{x_target_ip}/{path}")
             try:
                 resp = await client.get(
                     f"http://{x_target_ip}/{path}",
                     params=dict(request.query_params),
                     headers=internal_headers,
-                    timeout=None
                 )
             except httpx.ConnectTimeout:
                 raise HTTPException(status_code=504, detail="Timeout connecting to fog")
