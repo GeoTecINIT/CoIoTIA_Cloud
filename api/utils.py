@@ -9,11 +9,19 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
 
     async with httpx.AsyncClient() as client:
         if request.method == "GET":
-            resp = await client.get(
-                f"http://{x_target_ip}/{path}",
-                params=dict(request.query_params),
-                headers=internal_headers
-            )
+            try:
+                resp = await client.get(
+                    f"http://{x_target_ip}/{path}",
+                    params=dict(request.query_params),
+                    headers=internal_headers
+                )
+            except httpx.ConnectTimeout:
+                raise Exception(status_code=504, detail="Timeout connecting to fog")
+            except httpx.ConnectError:
+                raise Exception(status_code=503, detail="Can't connect to fog")
+            except:
+                raise Exception(status_code=500, detail="Unexpected error")
+
         else:
             form = await request.form()
 
@@ -26,11 +34,19 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
             kwargs = {"data": form_data}
             if files:
                 kwargs["files"] = files
-            resp = await client.post(
-                f"http://{x_target_ip}/{path}",
-                **kwargs,
-                headers=internal_headers
-            )
+
+            try: 
+                resp = await client.post(
+                    f"http://{x_target_ip}/{path}",
+                    **kwargs,
+                    headers=internal_headers
+                )
+            except httpx.ConnectTimeout:
+                raise Exception(status_code=504, detail="Timeout connecting to fog")
+            except httpx.ConnectError:
+                raise Exception(status_code=503, detail="Can't connect to fog")
+            except:
+                raise Exception(status_code=500, detail="Unexpected error")
 
     return Response(content=resp.content, status_code=resp.status_code)
 
