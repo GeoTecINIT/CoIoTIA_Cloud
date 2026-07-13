@@ -13,7 +13,8 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
                 resp = await client.get(
                     f"http://{x_target_ip}/{path}",
                     params=dict(request.query_params),
-                    headers=internal_headers
+                    headers=internal_headers,
+                    timeout=None
                 )
             except httpx.ConnectTimeout:
                 raise HTTPException(status_code=504, detail="Timeout connecting to fog")
