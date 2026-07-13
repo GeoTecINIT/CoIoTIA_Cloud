@@ -90,7 +90,7 @@ async def create_all_virtual_devices(request: Request):
     )
 
 
-@router.post("/list")
+@router.get("/list")
 async def list_virtual_devices(request: Request, x_target_ip: str = Header(...), token: str = Depends(get_token)):
     uid = request.app.state.firebase.verify_firebase_token(token)
     return await forward_request("virtual/list", request, x_target_ip, uid=uid)

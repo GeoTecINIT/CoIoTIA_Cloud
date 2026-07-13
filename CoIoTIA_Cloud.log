@@ -5825,3 +5825,156 @@
 2026-07-03 12:16:09,360 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
 2026-07-03 12:16:09,360 [INFO] CoIoTIA_Cloud: Listener task created
 2026-07-03 12:16:09,376 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-07-13 11:23:55,043 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 11:23:55,045 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-07-13 11:23:55,045 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 11:23:55,387 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-07-13 11:23:55,387 [INFO] CoIoTIA_Cloud: Listener task created
+2026-07-13 11:23:55,431 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-07-13 11:24:20,919 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:24:50,915 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:25:20,926 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:25:50,928 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:26:20,929 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:26:50,932 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:27:20,934 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:27:50,935 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:28:20,938 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:28:50,939 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:29:20,938 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:29:50,943 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:30:20,943 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:30:50,947 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:31:20,948 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:31:50,951 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:32:20,948 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:32:50,945 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:33:20,955 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:33:50,953 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:34:20,957 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:34:50,956 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:35:20,963 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:35:50,965 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:36:20,959 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:36:50,969 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:37:20,968 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:37:50,973 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:38:20,970 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:38:50,974 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:39:20,973 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:39:50,978 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:40:20,977 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:40:50,973 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:41:20,984 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:41:50,979 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:42:20,984 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:42:50,990 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:43:20,992 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:43:50,994 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:44:20,996 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:44:50,997 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:45:20,990 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 11:45:51,001 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:01:04,824 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 12:01:04,824 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-07-13 12:01:04,824 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 12:01:05,097 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-07-13 12:01:05,097 [INFO] CoIoTIA_Cloud: Listener task created
+2026-07-13 12:01:05,120 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-07-13 12:01:21,053 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:01:51,060 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:02:10,767 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 12:02:10,767 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-07-13 12:02:10,767 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 12:02:11,016 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-07-13 12:02:11,016 [INFO] CoIoTIA_Cloud: Listener task created
+2026-07-13 12:02:11,031 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-07-13 12:05:17,761 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 12:05:17,762 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-07-13 12:05:17,762 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 12:05:18,014 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-07-13 12:05:18,014 [INFO] CoIoTIA_Cloud: Listener task created
+2026-07-13 12:05:18,043 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-07-13 12:05:21,078 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:05:51,080 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:06:10,183 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 12:06:10,184 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-07-13 12:06:10,184 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-13 12:06:10,538 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-07-13 12:06:10,538 [INFO] CoIoTIA_Cloud: Listener task created
+2026-07-13 12:06:10,557 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-07-13 12:06:21,082 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:06:51,068 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:07:21,087 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:07:51,087 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:08:21,091 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:08:51,093 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:09:21,095 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:09:51,095 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:10:21,098 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:10:51,099 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:11:21,099 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:11:51,099 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:11:52,082 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline
+2026-07-13 12:12:00,992 [INFO] CoIoTIA_Cloud: Device Fog 1 is online at 192.168.53.133
+2026-07-13 12:12:31,001 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:13:01,004 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:13:30,993 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:14:01,005 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:14:31,010 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:15:01,012 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:15:31,014 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:16:01,018 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:16:31,020 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:17:01,021 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:17:31,023 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:18:01,021 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:18:31,023 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:19:01,027 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:19:31,029 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:20:01,032 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:20:31,033 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:21:01,030 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:21:31,029 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:22:01,035 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:22:31,035 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:23:01,040 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:23:31,044 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:24:01,047 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:24:31,049 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:25:01,040 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:25:31,053 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:26:01,046 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:26:31,047 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:27:01,060 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:27:31,051 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:28:01,063 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:28:04,902 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline
+2026-07-13 12:28:16,817 [INFO] CoIoTIA_Cloud: Device Fog 1 is online at 192.168.53.133
+2026-07-13 12:28:46,829 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:29:16,838 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:29:46,826 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:30:16,837 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:30:46,841 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:31:16,844 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:31:46,842 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:32:16,846 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:32:46,852 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:33:16,855 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:33:46,853 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:34:16,852 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:34:46,860 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:35:16,863 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:35:46,851 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:36:16,863 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:36:46,869 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:37:16,870 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:37:46,869 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:38:16,874 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:38:46,876 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:39:16,878 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:39:46,872 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:40:16,880 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:40:46,876 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:41:16,888 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-13 12:41:46,888 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
