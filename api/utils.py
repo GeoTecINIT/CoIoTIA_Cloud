@@ -1,4 +1,4 @@
-from fastapi import Request, Response
+from fastapi import Request, Response, HTTPException
 import httpx
 
 
@@ -16,11 +16,11 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
                     headers=internal_headers
                 )
             except httpx.ConnectTimeout:
-                raise Exception(status_code=504, detail="Timeout connecting to fog")
+                raise HTTPException(status_code=504, detail="Timeout connecting to fog")
             except httpx.ConnectError:
-                raise Exception(status_code=503, detail="Can't connect to fog")
+                raise HTTPException(status_code=503, detail="Can't connect to fog")
             except:
-                raise Exception(status_code=500, detail="Unexpected error")
+                raise HTTPException(status_code=500, detail="Unexpected error")
 
         else:
             form = await request.form()
@@ -42,11 +42,11 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
                     headers=internal_headers
                 )
             except httpx.ConnectTimeout:
-                raise Exception(status_code=504, detail="Timeout connecting to fog")
+                raise HTTPException(status_code=504, detail="Timeout connecting to fog")
             except httpx.ConnectError:
-                raise Exception(status_code=503, detail="Can't connect to fog")
+                raise HTTPException(status_code=503, detail="Can't connect to fog")
             except:
-                raise Exception(status_code=500, detail="Unexpected error")
+                raise HTTPException(status_code=500, detail="Unexpected error")
 
     return Response(content=resp.content, status_code=resp.status_code)
 
