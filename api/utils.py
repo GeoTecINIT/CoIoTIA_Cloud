@@ -7,9 +7,10 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
     if uid:
         internal_headers["X-User-UID"] = uid
 
+    request.app.state.logger.info(f"http://{x_target_ip}/{path}")
+
     async with httpx.AsyncClient() as client:
         if request.method == "GET":
-            print(f"http://{x_target_ip}/{path}")
             try:
                 resp = await client.get(
                     f"http://{x_target_ip}/{path}",
