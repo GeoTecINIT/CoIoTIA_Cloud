@@ -43,10 +43,13 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
                     headers=internal_headers
                 )
             except httpx.ConnectTimeout:
+                request.app.state.logger.info(f"Error 504")
                 raise HTTPException(status_code=504, detail="Timeout connecting to fog")
             except httpx.ConnectError:
+                request.app.state.logger.info(f"Error 503")
                 raise HTTPException(status_code=503, detail="Can't connect to fog")
             except:
+                request.app.state.logger.info(f"Error 500")
                 raise HTTPException(status_code=500, detail="Unexpected error")  
         request.app.state.logger.info(f"Finished query with status {resp.status_code}")      
 
