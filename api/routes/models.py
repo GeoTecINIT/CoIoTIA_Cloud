@@ -36,4 +36,4 @@ async def delete_model(request: Request, x_target_ip: str = Header(...)):
 
 @router.post("/deploy")
 async def deploy_model(request: Request, x_target_ip: str = Header(...)):
-    return await forward_request("deploy", request, x_target_ip)
+    return await forward_request("models/deploy", request, x_target_ip)
