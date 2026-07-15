@@ -5978,3 +5978,15 @@
 2026-07-13 12:40:46,876 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
 2026-07-13 12:41:16,888 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
 2026-07-13 12:41:46,888 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-14 12:56:09,875 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-14 12:56:09,876 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-07-14 12:56:09,876 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-14 12:56:10,231 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-07-14 12:56:10,231 [INFO] CoIoTIA_Cloud: Listener task created
+2026-07-14 12:56:10,248 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-07-14 14:07:46,515 [INFO] CoIoTIA_Cloud: Device Fog 1 is online at 192.168.53.133
+2026-07-14 14:08:16,512 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-14 14:08:46,515 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-14 14:09:16,520 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-14 14:09:46,525 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-14 14:10:16,513 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1

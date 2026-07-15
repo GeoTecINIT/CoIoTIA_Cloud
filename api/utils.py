@@ -7,8 +7,6 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
     if uid:
         internal_headers["X-User-UID"] = uid
 
-    request.app.state.logger.info(uid)
-
     async with httpx.AsyncClient() as client:
         if request.method == "GET":
             try:
@@ -23,6 +21,7 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
                 raise HTTPException(status_code=503, detail="Can't connect to fog")
             except:
                 raise HTTPException(status_code=500, detail="Unexpected error")
+            request.app.state.logger.info(resp)
 
         else:
             form = await request.form()
