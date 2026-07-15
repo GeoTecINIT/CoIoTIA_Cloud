@@ -1,4 +1,5 @@
-from fastapi import Request, Response, HTTPException
+from fastapi import Request, HTTPException
+from fastapi.responses import JSONResponse
 import httpx
 
 
@@ -49,7 +50,7 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
             except:
                 raise HTTPException(status_code=500, detail="Unexpected error")  
 
-    return Response(content=resp.content, status_code=resp.status_code)
+    return JSONResponse(content=resp.content, status_code=resp.status_code)
 
 
 def build_fog_url(ip: str, path: str) -> str:
