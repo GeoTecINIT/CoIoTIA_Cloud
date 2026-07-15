@@ -20,8 +20,9 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
             except httpx.ConnectError:
                 raise HTTPException(status_code=503, detail="Can't connect to fog")
             except:
+                request.app.state.logger.info(f"http://{x_target_ip}/{path}")
+                request.app.state.logger.info(resp.status_code)
                 raise HTTPException(status_code=500, detail="Unexpected error")
-            request.app.state.logger.info(resp)
 
         else:
             form = await request.form()
