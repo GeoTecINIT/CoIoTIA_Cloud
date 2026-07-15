@@ -8,6 +8,7 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
         internal_headers["X-User-UID"] = uid
 
     async with httpx.AsyncClient() as client:
+        request.app.state.logger.info(f"Starting query to http://{x_target_ip}/{path}")
         if request.method == "GET":
             try:
                 resp = await client.get(
@@ -46,8 +47,8 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
             except httpx.ConnectError:
                 raise HTTPException(status_code=503, detail="Can't connect to fog")
             except:
-                request.app.state.logger.info(resp.status_code)
-                raise HTTPException(status_code=500, detail="Unexpected error")        
+                raise HTTPException(status_code=500, detail="Unexpected error")  
+        request.app.state.logger.info(f"Finished query with status {resp.status_code}")      
 
     return Response(content=resp.content, status_code=resp.status_code)
 
