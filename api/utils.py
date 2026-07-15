@@ -40,7 +40,8 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
                 resp = await client.post(
                     f"http://{x_target_ip}/{path}",
                     **kwargs,
-                    headers=internal_headers
+                    headers=internal_headers,
+                    timeout=30
                 )
             except httpx.ConnectTimeout:
                 request.app.state.logger.info(f"Error 504")
