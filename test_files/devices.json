@@ -1,0 +1,29 @@
+[
+    {
+        "name" : "Test 1",
+        "mac" : "11:11:11:11:11:11",
+        "analysis_type" : "Prediction",
+        "data_type" : "Temperature",
+        "virtual" : true,
+        "mobile" : false,
+        "federated" : false
+    },
+    {
+        "name" : "Test 2",
+        "mac" : "22:22:22:22:22:22",
+        "analysis_type" : "Prediction",
+        "data_type" : "Temperature",
+        "virtual" : true,
+        "mobile" : false,
+        "federated" : true
+    },
+    {
+        "name" : "Test 3",
+        "mac" : "33:33:33:33:33:33",
+        "analysis_type" : "Prediction",
+        "data_type" : "Temperature",
+        "virtual" : false,
+        "mobile" : true,
+        "federated" : false
+    }
+]

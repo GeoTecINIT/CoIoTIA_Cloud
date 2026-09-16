@@ -5990,3 +5990,777 @@
 2026-07-14 14:09:16,520 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
 2026-07-14 14:09:46,525 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
 2026-07-14 14:10:16,513 [INFO] CoIoTIA_Cloud: Received metrics from Fog 1
+2026-07-21 12:00:01,552 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-21 12:00:01,552 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-07-21 12:00:01,552 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-21 12:00:02,006 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-07-21 12:00:02,006 [INFO] CoIoTIA_Cloud: Listener task created
+2026-07-21 12:00:02,035 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-07-28 14:16:04,737 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-28 14:16:04,741 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-07-28 14:16:04,741 [INFO] CoIoTIA_Cloud: ===================================
+2026-07-28 14:16:06,662 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-07-28 14:16:06,663 [INFO] CoIoTIA_Cloud: Listener task created
+2026-07-28 14:16:06,716 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 11:11:03,319 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 11:11:03,319 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 11:11:03,319 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 11:11:03,701 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 11:11:03,701 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 11:11:03,718 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 11:44:16,502 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 11:44:16,502 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 11:44:16,502 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 11:44:16,780 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 11:44:16,780 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 11:44:16,803 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 11:47:17,308 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 11:47:17,309 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 11:47:17,309 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 11:47:17,599 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 11:47:17,599 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 11:47:17,866 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 12:11:26,099 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 12:11:26,099 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 12:11:26,099 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 12:11:26,461 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 12:11:26,462 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 12:11:26,544 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 12:27:50,809 [INFO] CoIoTIA_Cloud: Connection to http://127.0.0.1:8001/models/list
+2026-09-09 12:27:51,009 [INFO] CoIoTIA_Cloud: Connection to http://127.0.0.1:8001/virtual/list
+2026-09-09 13:57:37,070 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 13:57:37,070 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 13:57:37,070 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 13:57:37,510 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 13:57:37,510 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 13:57:37,528 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 13:58:12,012 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 13:58:12,012 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 13:58:12,012 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 13:58:12,277 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 13:58:12,278 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 13:58:12,295 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 13:58:59,817 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 13:58:59,817 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 13:58:59,817 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 13:59:00,147 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 13:59:00,147 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 13:59:00,175 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 13:59:39,386 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 13:59:39,386 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 13:59:39,386 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 13:59:39,691 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 13:59:39,691 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 13:59:39,734 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:02:02,746 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:02:02,746 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:02:02,746 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:02:03,042 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:02:03,042 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:02:03,059 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:02:22,290 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:02:22,290 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:02:22,290 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:02:22,576 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:02:22,576 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:02:22,611 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:03:46,326 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:03:46,326 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:03:46,326 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:03:46,648 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:03:46,648 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:03:46,684 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:04:09,785 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:04:09,785 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:04:09,785 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:04:10,031 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:04:10,032 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:04:10,067 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:09:20,870 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:09:20,870 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:09:20,870 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:09:21,156 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:09:21,156 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:09:21,191 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:09:52,178 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:09:52,178 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:09:52,178 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:09:52,508 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:09:52,508 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:09:52,532 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:22:16,169 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:22:16,169 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:22:16,169 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:22:16,500 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:22:16,500 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:22:16,510 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:22:29,101 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:22:29,101 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:22:29,101 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:22:29,428 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:22:29,428 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:22:29,450 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:23:09,646 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:23:09,646 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:23:09,646 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:23:09,870 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:23:09,870 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:23:09,893 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:24:44,703 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:24:44,703 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:24:44,703 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:24:45,113 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:24:45,113 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:24:45,128 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-09 14:24:56,173 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:24:56,174 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-09 14:24:56,174 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-09 14:24:56,634 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-09 14:24:56,635 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-09 14:24:56,656 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 08:51:19,880 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 08:51:19,881 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 08:51:19,881 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 08:51:20,271 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 08:51:20,273 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 08:51:20,303 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 08:59:47,379 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 08:59:47,379 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 08:59:47,379 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 08:59:47,768 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 08:59:47,768 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 08:59:47,798 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:00:06,769 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:06,769 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:00:06,769 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:07,119 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:00:07,119 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:00:07,149 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:00:14,403 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:14,403 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:00:14,403 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:14,678 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:00:14,678 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:00:14,704 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:00:18,718 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:18,718 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:00:18,718 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:19,005 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:00:19,005 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:00:19,027 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:00:26,522 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:26,522 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:00:26,522 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:26,859 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:00:26,859 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:00:26,908 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:00:37,517 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:37,518 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:00:37,518 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:37,769 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:00:37,769 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:00:37,786 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:00:49,705 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:49,705 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:00:49,705 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:49,962 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:00:49,962 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:00:49,978 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:00:57,488 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:57,488 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:00:57,488 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:00:57,744 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:00:57,744 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:00:57,778 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:01:06,231 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:06,231 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:01:06,231 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:06,582 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:01:06,582 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:01:06,602 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:01:16,578 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:16,578 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:01:16,581 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:16,833 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:01:16,833 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:01:16,849 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:01:21,100 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:21,100 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:01:21,100 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:21,335 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:01:21,335 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:01:21,370 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:01:33,766 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:33,767 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:01:33,767 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:34,016 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:01:34,016 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:01:34,048 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:01:38,541 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:38,541 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:01:38,541 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:38,821 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:01:38,821 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:01:38,856 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:01:42,512 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:42,521 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:01:42,521 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:01:42,790 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:01:42,790 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:01:42,810 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:03:33,798 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:03:33,798 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:03:33,798 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:03:34,121 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:03:34,121 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:03:34,144 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:17:15,679 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:17:15,679 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:17:15,679 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:17:15,979 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:17:15,979 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:17:15,999 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:18:08,044 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-10 13:18:09,688 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:18:09,689 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:18:09,689 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:18:10,017 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:18:10,017 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:18:10,053 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-10 13:21:30,775 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-10 13:22:40,989 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:22:40,989 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-10 13:22:40,989 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-10 13:22:41,329 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-10 13:22:41,329 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-10 13:22:41,362 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 11:16:27,133 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 11:16:27,133 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 11:16:27,133 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 11:16:27,483 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 11:16:27,483 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 11:16:27,530 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 11:36:40,277 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 11:36:42,140 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 11:36:42,141 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 11:36:42,141 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 11:36:42,536 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 11:36:42,536 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 11:36:42,570 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 11:38:22,923 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 11:56:04,809 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 11:56:04,809 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 11:56:04,809 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 11:56:05,159 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 11:56:05,159 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 11:56:05,222 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:04:38,931 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:04:40,587 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:04:40,587 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:04:40,587 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:04:41,015 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:04:41,015 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:04:41,046 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:05:47,184 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:05:48,910 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:05:48,910 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:05:48,910 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:05:49,217 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:05:49,217 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:05:49,244 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:06:35,464 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:06:37,263 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:06:37,263 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:06:37,263 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:06:37,539 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:06:37,539 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:06:37,626 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:10:17,744 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:10:19,513 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:10:19,513 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:10:19,513 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:10:19,835 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:10:19,835 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:10:19,867 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:10:42,874 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:10:44,567 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:10:44,567 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:10:44,567 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:10:44,855 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:10:44,856 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:10:44,883 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:11:44,891 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:11:46,666 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:11:46,666 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:11:46,666 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:11:46,951 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:11:46,951 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:11:47,008 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:13:02,784 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:13:13,348 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:13:13,348 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:13:13,348 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:13:13,650 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:13:13,650 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:13:13,681 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:13:20,196 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:13:21,867 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:13:21,867 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:13:21,873 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:13:22,135 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:13:22,135 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:13:22,155 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:13:24,247 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:13:25,896 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:13:25,896 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:13:25,896 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:13:26,171 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:13:26,171 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:13:26,210 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:14:17,796 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:14:19,558 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:14:19,559 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:14:19,559 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:14:19,811 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:14:19,811 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:14:19,849 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:15:44,814 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:15:46,774 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:15:46,774 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:15:46,774 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:15:47,061 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:15:47,061 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:15:47,106 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:15:47,181 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:15:53,240 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:15:53,240 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:15:53,240 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:15:53,583 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:15:53,583 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:15:53,629 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:15:56,300 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:19:29,487 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:19:29,487 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:19:29,487 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:19:29,817 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:19:29,817 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:19:29,834 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:19:40,653 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:19:42,348 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:19:42,348 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:19:42,348 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:19:42,605 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:19:42,605 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:19:42,636 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:20:50,473 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:20:52,143 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:20:52,144 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:20:52,144 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:20:52,426 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:20:52,426 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:20:52,442 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:21:05,873 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:21:07,506 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:21:07,506 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:21:07,506 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:21:07,855 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:21:07,855 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:21:07,873 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:21:35,059 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:21:36,787 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:21:36,787 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:21:36,787 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:21:37,033 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:21:37,033 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:21:37,068 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:25:07,676 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:25:09,399 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:25:09,399 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:25:09,399 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:25:09,687 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:25:09,687 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:25:09,756 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:26:46,971 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:26:48,729 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:26:48,730 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:26:48,730 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:26:49,108 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:26:49,108 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:26:49,131 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:27:08,571 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:27:10,186 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:27:10,192 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:27:10,192 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:27:10,442 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:27:10,442 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:27:10,463 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:27:20,929 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:27:22,606 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:27:22,606 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:27:22,606 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:27:22,870 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:27:22,870 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:27:22,909 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:27:23,200 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:27:24,843 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:27:24,843 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:27:24,843 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:27:25,157 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:27:25,158 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:27:25,194 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:30:26,888 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:30:40,101 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:30:40,101 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:30:40,101 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:30:40,403 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:30:40,403 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:30:40,434 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:30:44,698 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:30:46,335 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:30:46,335 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:30:46,335 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:30:46,616 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:30:46,617 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:30:46,623 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:30:54,861 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:30:56,476 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:30:56,476 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:30:56,476 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:30:56,777 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:30:56,777 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:30:56,813 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:31:04,974 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:31:06,683 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:31:06,683 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:31:06,683 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:31:06,929 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:31:06,929 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:31:06,954 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:31:13,428 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:31:15,058 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:31:15,058 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:31:15,058 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:31:15,289 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:31:15,298 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:31:15,316 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:34:18,545 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:34:20,260 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:34:20,260 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:34:20,260 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:34:20,608 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:34:20,612 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:34:20,626 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:34:20,728 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:34:22,305 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:34:22,305 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:34:22,305 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:34:22,572 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:34:22,572 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:34:22,626 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:34:29,265 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:34:30,936 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:34:30,936 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:34:30,936 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:34:31,196 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:34:31,197 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:34:31,207 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 12:34:31,297 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 12:34:33,017 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:34:33,017 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 12:34:33,017 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 12:34:33,287 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 12:34:33,298 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 12:34:33,316 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:05:59,466 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:06:09,494 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:06:09,494 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:06:09,495 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:06:09,792 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:06:09,792 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:06:09,832 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:07:10,258 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:07:12,006 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:07:12,007 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:07:12,007 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:07:12,309 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:07:12,310 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:07:12,329 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:07:34,884 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:07:36,557 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:07:36,557 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:07:36,557 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:07:36,830 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:07:36,830 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:07:36,852 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:09:17,314 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:09:18,901 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:09:18,902 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:09:18,902 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:09:19,196 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:09:19,196 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:09:19,229 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:10:07,171 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:10:08,765 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:10:08,765 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:10:08,765 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:10:09,043 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:10:09,043 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:10:09,080 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:11:18,502 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:11:44,090 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:11:44,090 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:11:44,090 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:11:44,386 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:11:44,386 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:11:44,429 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:21:05,133 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:21:06,937 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:21:06,937 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:21:06,938 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:21:07,248 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:21:07,248 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:21:07,292 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:22:53,874 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:22:55,608 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:22:55,608 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:22:55,608 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:22:55,898 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:22:55,898 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:22:55,926 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:23:34,337 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:26:42,473 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:26:42,473 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:26:42,473 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:26:42,844 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:26:42,844 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:26:42,884 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:29:26,351 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:29:28,075 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:29:28,075 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:29:28,075 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:29:28,397 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:29:28,397 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:29:28,417 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:30:04,225 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:30:05,948 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:30:05,948 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:30:05,949 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:30:06,242 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:30:06,242 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:30:06,269 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:34:19,347 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:34:21,095 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:34:21,095 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:34:21,095 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:34:21,393 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:34:21,393 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:34:21,434 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:34:51,785 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:34:53,649 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:34:53,651 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:34:53,651 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:34:53,922 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:34:53,923 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:34:53,946 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:35:18,023 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:35:19,752 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:35:19,752 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:35:19,752 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:35:20,017 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:35:20,017 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:35:20,040 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:35:46,236 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:35:47,896 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:35:47,896 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:35:47,896 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:35:48,164 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:35:48,164 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:35:48,199 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:36:09,618 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:36:11,289 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:36:11,289 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:36:11,289 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:36:11,558 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:36:11,558 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:36:11,575 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:36:15,041 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:36:16,695 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:36:16,695 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:36:16,695 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:36:16,956 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:36:16,956 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:36:16,977 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:36:24,072 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:36:25,707 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:36:25,707 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:36:25,707 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:36:25,957 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:36:25,957 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:36:25,997 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-14 13:37:01,988 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-14 13:37:03,660 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:37:03,660 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-14 13:37:03,660 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-14 13:37:03,947 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-14 13:37:03,947 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-14 13:37:03,966 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-15 13:31:24,871 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-15 13:31:24,873 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-15 13:31:24,873 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-15 13:31:25,502 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-15 13:31:25,502 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-15 13:31:25,546 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 08:50:27,731 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 08:50:27,731 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 08:50:27,731 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 08:50:28,512 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 08:50:28,512 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 08:50:28,556 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 09:10:53,021 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 09:14:23,072 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 09:14:23,072 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 09:14:23,072 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 09:14:23,584 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 09:14:23,584 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 09:14:23,617 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 09:59:13,076 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 09:59:14,815 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 09:59:14,816 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 09:59:14,816 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 09:59:15,261 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 09:59:15,261 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 09:59:15,277 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 11:39:02,507 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 11:39:04,340 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 11:39:04,340 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 11:39:04,340 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 11:39:04,707 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 11:39:04,707 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 11:39:04,737 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 11:39:26,058 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 11:39:27,789 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 11:39:27,789 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 11:39:27,789 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 11:39:28,115 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 11:39:28,115 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 11:39:28,164 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 11:41:39,893 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 11:41:41,557 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 11:41:41,557 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 11:41:41,557 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 11:41:41,912 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 11:41:41,912 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 11:41:41,933 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 11:41:59,863 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 11:42:01,621 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 11:42:01,621 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 11:42:01,621 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 11:42:01,935 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 11:42:01,935 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 11:42:01,965 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:25:14,026 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:25:18,276 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:25:18,277 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:25:18,277 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:25:18,653 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:25:18,653 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:25:18,678 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:25:37,260 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:25:38,959 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:25:38,959 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:25:38,959 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:25:39,317 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:25:39,317 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:25:39,350 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:26:02,744 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:26:04,403 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:26:04,403 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:26:04,403 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:26:04,777 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:26:04,777 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:26:04,800 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:26:20,578 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:26:22,185 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:26:22,185 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:26:22,185 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:26:22,521 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:26:22,521 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:26:22,543 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:26:28,316 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:26:29,972 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:26:29,972 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:26:29,972 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:26:30,257 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:26:30,257 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:26:30,290 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:27:28,449 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:27:30,112 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:27:30,112 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:27:30,112 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:27:30,451 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:27:30,451 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:27:30,471 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:27:35,271 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:27:37,014 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:27:37,014 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:27:37,014 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:27:37,308 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:27:37,308 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:27:37,334 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:33:15,464 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:33:17,252 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:33:17,252 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:33:17,252 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:33:17,637 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:33:17,637 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:33:17,685 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:34:12,943 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:34:14,639 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:34:14,639 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:34:14,639 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:34:14,954 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:34:14,954 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:34:14,971 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:36:24,070 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:36:25,825 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:36:25,825 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:36:25,825 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:36:26,134 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:36:26,134 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:36:26,178 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:36:58,686 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:37:00,389 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:37:00,389 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:37:00,389 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:37:00,732 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:37:00,732 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:37:00,754 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:37:20,119 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:37:21,797 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:37:21,797 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:37:21,797 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:37:22,129 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:37:22,130 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:37:22,148 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:37:37,361 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:37:39,067 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:37:39,077 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:37:39,077 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:37:39,348 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:37:39,348 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:37:39,391 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:37:53,816 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:37:55,456 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:37:55,466 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:37:55,466 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:37:55,764 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:37:55,764 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:37:55,791 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:40:56,906 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-16 12:40:58,634 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:40:58,635 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-16 12:40:58,635 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-16 12:40:58,968 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-16 12:40:58,968 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-16 12:40:58,999 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-16 12:41:39,289 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker

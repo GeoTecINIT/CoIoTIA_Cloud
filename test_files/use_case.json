@@ -1,0 +1,7 @@
+{
+    "name" : "AVAMET Temperature prediction",
+    "domain_id" : "Temperature prediction",
+    "description" : "Temperature prediction in Castellón province with AVAMET data",
+    "keywords" : ["temperature", "prediction", "Castellón", "AVAMET"],
+    "clustering_method" : "KDE"
+}
