@@ -6828,3 +6828,11 @@
 2026-09-18 09:05:32,815 [INFO] CoIoTIA_Cloud: Listener task created
 2026-09-18 09:05:32,854 [INFO] CoIoTIA_Cloud: Connected and subscribed
 2026-09-18 09:13:26,865 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-09-18 09:13:29,914 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-18 09:13:29,914 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-09-18 09:13:29,914 [INFO] CoIoTIA_Cloud: ===================================
+2026-09-18 09:13:30,275 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-09-18 09:13:30,275 [INFO] CoIoTIA_Cloud: Listener task created
+2026-09-18 09:13:30,295 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-09-18 12:19:12,917 [ERROR] CoIoTIA_Cloud: Listener error: Disconnected during message iteration
+2026-09-18 13:54:33,235 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
