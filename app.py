@@ -56,7 +56,7 @@ async def lifespan(app: FastAPI):
     app.state.logger.info("===================================")
     
     pool = AsyncConnectionPool(
-        conninfo="postgresql://postgres:postgres@localhost:5432/cloud_db",
+        conninfo=os.getenv("DB_URL"),
         min_size=4,
         max_size=20,
         open=False
