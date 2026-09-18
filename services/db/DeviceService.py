@@ -15,6 +15,14 @@ class DeviceService:
                 result = await cur.fetchall()
                 return [DeviceRead(**row) for row in result]
 
+    async def get_devices_of_use_case(self, use_case_id, user_uid):
+        query = "SELECT * FROM devices WHERE use_case_id = %s AND user_id = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor(row_factory=dict_row) as cur:
+                await cur.execute(query, (use_case_id, user_uid,))
+                result = await cur.fetchall()
+                return [DeviceRead(**row) for row in result]
+
     # async def create_use_case(self, use_case, user_uid):
     #         query = """
     #             INSERT INTO use_cases (name, description, keywords, clustering_method, domain_id, user_id)

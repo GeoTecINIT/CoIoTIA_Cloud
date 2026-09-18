@@ -10,8 +10,15 @@ router = APIRouter()
 async def get_devices(request: Request, token: str = Depends(get_token)):
     service = request.app.state.device_service
     uid = request.app.state.firebase.verify_firebase_token(token)
-    use_cases = await service.get_devices(uid)
-    return use_cases
+    devices = await service.get_devices(uid)
+    return devices
+
+@router.get("/listUseCase")
+async def get_devices_of_use_case(request: Request, use_case_id: int, token: str = Depends(get_token)):
+    service = request.app.state.device_service
+    uid = request.app.state.firebase.verify_firebase_token(token)
+    devices = await service.get_devices_of_use_case(use_case_id, uid)
+    return devices
 
 @router.post("/createInUseCase")
 async def create_devices_use_case(request: Request, payload: list[DeviceCreate], token: str = Depends(get_token)):
