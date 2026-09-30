@@ -38,31 +38,31 @@ class DeviceService:
 
 
     async def create_devices_use_case(self, devices, user_uid):
-                query = """
-                    INSERT INTO devices (mac, name, virtual, mobile, federated, analysis_type, data_type, use_case_id, user_id, silhouette_score, status)
-                    VALUES(%(mac)s, %(name)s, %(virtual)s, %(mobile)s, %(federated)s, %(analysis_type)s, %(data_type)s, %(use_case_id)s, %(user_id)s, %(silhouette_score)s, %(status)s)
-                    ON CONFLICT (mac)
-                    DO UPDATE SET
-                        use_case_id = EXCLUDED.use_case_id
-                """
-                params = [
-                    {
-                        "mac": device.mac,
-                        "name": device.name,
-                        "virtual": device.virtual,
-                        "mobile": device.mobile,
-                        "federated": device.federated,
-                        "analysis_type": device.analysis_type,
-                        "data_type": device.data_type,
-                        "use_case_id": device.use_case_id,
-                        "user_id": user_uid,
-                        "silhouette_score": device.silhouette_score,
-                        "status": device.status,
-                    }
-                    for device in devices
-                ]
+        query = """
+            INSERT INTO devices (mac, name, virtual, mobile, federated, analysis_type, data_type, use_case_id, user_id, silhouette_score, status)
+            VALUES(%(mac)s, %(name)s, %(virtual)s, %(mobile)s, %(federated)s, %(analysis_type)s, %(data_type)s, %(use_case_id)s, %(user_id)s, %(silhouette_score)s, %(status)s)
+            ON CONFLICT (mac)
+            DO UPDATE SET
+                use_case_id = EXCLUDED.use_case_id
+        """
+        params = [
+            {
+                "mac": device.mac,
+                "name": device.name,
+                "virtual": device.virtual,
+                "mobile": device.mobile,
+                "federated": device.federated,
+                "analysis_type": device.analysis_type,
+                "data_type": device.data_type,
+                "use_case_id": device.use_case_id,
+                "user_id": user_uid,
+                "silhouette_score": device.silhouette_score,
+                "status": device.status,
+            }
+            for device in devices
+        ]
 
-                async with self.pool.connection() as conn:
-                    async with conn.transaction():
-                        async with conn.cursor() as cur:
-                            await cur.executemany(query, params)
+        async with self.pool.connection() as conn:
+            async with conn.transaction():
+                async with conn.cursor() as cur:
+                    await cur.executemany(query, params)

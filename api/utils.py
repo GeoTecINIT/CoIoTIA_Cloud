@@ -8,12 +8,12 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
     if uid:
         internal_headers["X-User-UID"] = uid
 
-    request.app.state.logger.info(f"Connection to http://{x_target_ip}/{path}")
+    request.app.state.logger.info(f"Connection to {x_target_ip}/{path}")
     async with httpx.AsyncClient() as client:
         if request.method == "GET":
             try:
                 resp = await client.get(
-                    f"http://{x_target_ip}/{path}",
+                    f"{x_target_ip}/{path}",
                     params=dict(request.query_params),
                     headers=internal_headers,
                 )
@@ -39,7 +39,7 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
 
             try: 
                 resp = await client.post(
-                    f"http://{x_target_ip}/{path}",
+                    f"{x_target_ip}/{path}",
                     **kwargs,
                     headers=internal_headers,
                     timeout=30

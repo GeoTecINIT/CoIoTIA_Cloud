@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.routes import models, virtual_devices, cloud, extra, federated, use_cases, domains, devices, types
+from api.routes import models, virtual_devices, cloud, extra, federated, use_cases, domains, devices, types, coi, fog
 from contextlib import asynccontextmanager
 import asyncio
 from asyncio import Queue
@@ -74,7 +74,7 @@ async def lifespan(app: FastAPI):
     app.state.event_queue = Queue(maxsize=5)
     app.state.fog_devices, app.state.fog_id_name = app.state.firebase.get_fog()
     app.state.logger.info(f"Loaded {len(app.state.fog_devices)} fog devices from Firestore")
-    app.state.mqtt = MQTTService(os.getenv("MQTT_BROKER", "aiotserver.uji.es"), int(os.getenv("MQTT_PORT", 1883)), app.state.event_queue, app.state.logger, app.state.fog_devices)
+    app.state.mqtt = MQTTService(os.getenv("MQTT_BROKER", "aiotserver.uji.es"), int(os.getenv("MQTT_PORT", 1883)), app.state.event_queue, app.state.logger, app.state.fog_devices, app.state.fog_service)
 
     await app.state.mqtt.connect()
     app.state.check_online_task = asyncio.create_task(check_online_task(app))
@@ -112,4 +112,6 @@ app.include_router(federated.router, prefix="/federated")
 app.include_router(use_cases.router, prefix="/useCase")
 app.include_router(domains.router, prefix="/domains")
 app.include_router(devices.router, prefix="/devices")
+app.include_router(coi.router, prefix="/coi")
+app.include_router(fog.router, prefix="/fog")
 app.include_router(types.router, prefix="/types")

@@ -4,13 +4,14 @@ import time
 
 
 class MQTTService:
-    def __init__(self, broker, port, event_queue, logger, fog_devices):
+    def __init__(self, broker, port, event_queue, logger, fog_devices, fog_service):
         self.broker = broker
         self.port = port
 
         self.event_queue = event_queue
         self.logger = logger
         self.fog_devices = fog_devices
+        self.fog_service = fog_service
 
         self.client = None
         self.__task = None
@@ -69,7 +70,7 @@ class MQTTService:
         elif code == "OFFLINE":
             self.__offline(fog_info, content_dict)
         else:
-            self.__status(fog_info, content_dict)
+            await self.__status(fog_info, content_dict)
 
         await self.event_queue.put(
             {
@@ -93,12 +94,13 @@ class MQTTService:
         fog_info["status"] = 0
         self.logger.info(f"Device {device} is offline")
 
-    def __status(self, fog_info, content_dict):
+    async def __status(self, fog_info, content_dict):
         fog_info["last_updated"] = time.time()
         fog_info["status"] = 1
         fog_info["cpu"] = content_dict.get("CPU")
         fog_info["ram"] = content_dict.get("RAM")
         fog_info["disk"] = content_dict.get("Disk")
+        await self.fog_service.set_vitals(content_dict.get('NAME'), content_dict.get('CPU'), content_dict.get('RAM'), content_dict.get('Disk'))
         self.logger.info(f"Received metrics from {content_dict['NAME']}")
 
     
