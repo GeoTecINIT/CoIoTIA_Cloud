@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, Request, Response, Header
 from fastapi.responses import JSONResponse
 from api.auth import get_token
 
-from model.Device import DeviceCreate
+from model.Device import DeviceCreate, DeviceRead
 
 router = APIRouter()
 
@@ -13,7 +13,7 @@ async def get_devices(request: Request, token: str = Depends(get_token)):
     devices = await service.get_devices(uid)
     return devices
 
-@router.get("/listUseCase")
+@router.get("/listUseCase", response_model=list[DeviceRead])
 async def get_devices_of_use_case(request: Request, use_case_id: int, token: str = Depends(get_token)):
     service = request.app.state.device_service
     uid = request.app.state.firebase.verify_firebase_token(token)

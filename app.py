@@ -81,7 +81,7 @@ async def lifespan(app: FastAPI):
     
     yield
 
-    pool.close()
+    await pool.close()
     
     task = app.state.check_online_task
     if task and not task.done():
