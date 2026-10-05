@@ -2,7 +2,7 @@ from psycopg_pool import AsyncConnectionPool
 from psycopg.rows import dict_row
 import json
 
-from model.Coi import Coi
+from model.Coi import Coi, Centroid
 
 class CoiService:
     def __init__(self, pool: AsyncConnectionPool):
@@ -41,3 +41,12 @@ class CoiService:
                 await cur.execute(query, (use_case_id,))
                 result = await cur.fetchall()
                 return [Coi(**row) for row in result]
+
+
+    async def get_use_case_centroid(self, use_case_id):
+        query = "SELECT ST_Y(ST_Centroid(ST_Collect(geom))) AS lat, ST_X(ST_Centroid(ST_Collect(geom))) AS lon FROM coi WHERE use_case_id = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor(row_factory=dict_row) as cur:
+                await cur.execute(query, (use_case_id,))
+                result = await cur.fetchone()
+                return Centroid(**result)

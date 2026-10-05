@@ -11,3 +11,7 @@ class Coi(BaseModel):
     silhouette_score: float | None
     use_case_id: int
     fog_id: int | None
+
+class Centroid(BaseModel):
+    lat: float
+    lon: float

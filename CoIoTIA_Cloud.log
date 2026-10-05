@@ -8064,3 +8064,83 @@
 2026-10-01 11:21:01,666 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
 2026-10-01 11:22:01,666 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
 2026-10-01 11:23:01,666 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:24:01,666 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:25:01,666 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:26:01,668 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:27:01,669 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:28:01,670 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:29:01,671 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:30:01,670 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:31:01,671 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:32:01,672 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:33:01,672 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:34:01,672 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:35:01,673 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:36:01,674 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:37:01,674 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:38:01,675 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:39:01,675 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:40:01,676 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:41:01,676 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:42:01,678 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:43:01,677 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:44:01,678 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:45:01,678 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:46:01,680 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:47:01,681 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:48:01,681 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:49:01,681 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:50:01,682 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:51:01,682 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:52:01,682 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:53:01,682 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:54:01,682 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:55:01,683 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:56:01,684 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:57:01,685 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:58:01,686 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 11:59:01,687 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:00:01,688 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:01:01,687 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:01:45,786 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/list
+2026-10-01 12:02:01,687 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:03:01,687 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:04:01,687 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:05:01,688 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:06:01,688 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:07:01,689 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:08:01,689 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:09:01,688 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:10:01,688 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:11:01,689 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:12:01,690 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:13:01,691 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:14:01,691 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:15:01,691 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:16:01,692 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:17:01,693 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:18:01,692 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:19:01,692 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:20:01,692 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 12:21:01,692 [INFO] CoIoTIA_Cloud: Device Fog 1 is offline due to timeout
+2026-10-01 13:13:52,453 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-05 13:52:21,253 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-05 13:52:21,253 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-05 13:52:21,253 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-05 13:52:21,725 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-10-05 13:52:21,725 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-05 13:52:21,735 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-05 14:01:29,260 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-05 14:01:30,043 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-05 14:01:30,043 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-05 14:01:30,043 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-05 14:01:30,538 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-10-05 14:01:30,539 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-05 14:01:30,549 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-05 14:02:38,860 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-05 14:02:39,692 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-05 14:02:39,692 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-05 14:02:39,692 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-05 14:02:40,168 [INFO] CoIoTIA_Cloud: Loaded 5 fog devices from Firestore
+2026-10-05 14:02:40,168 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-05 14:02:40,177 [INFO] CoIoTIA_Cloud: Connected and subscribed
