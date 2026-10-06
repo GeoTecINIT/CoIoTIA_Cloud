@@ -7,6 +7,7 @@ class MultiPolygon(BaseModel):
 
 class Coi(BaseModel):
     id: int
+    name: str
     geom: MultiPolygon
     silhouette_score: float | None
     use_case_id: int

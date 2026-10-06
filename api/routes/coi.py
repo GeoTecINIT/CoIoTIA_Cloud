@@ -15,7 +15,11 @@ async def create_devices_use_case(request: Request, use_case_id: int, geojson: d
         feature["geometry"]
         for feature in geojson["features"]
     ]
-    await service.create_cois_use_case(geometries, use_case_id)
+    properties = [
+        feature["properties"]
+        for feature in geojson["features"]
+    ]
+    await service.create_cois_use_case(geometries, properties, use_case_id)
 
 
 @router.get("/list", response_model=list[Coi])

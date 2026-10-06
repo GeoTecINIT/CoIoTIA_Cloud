@@ -35,19 +35,19 @@ class DeviceService:
         """
         params = [
             {
-                "mac": device.mac,
-                "name": device.name,
-                "lat": device.lat,
-                "lon": device.lon,
-                "virtual": device.virtual,
-                "mobile": device.mobile,
-                "federated": device.federated,
-                "analysis_type": device.analysis_type,
-                "data_type": device.data_type,
+                "mac" : device.mac,
+                "name" : device.name,
+                "lat" : device.lat,
+                "lon" : device.lon,
+                "virtual" : device.virtual,
+                "mobile" : device.mobile,
+                "federated" : device.federated,
+                "analysis_type" : device.analysis_type,
+                "data_type" : device.data_type,
                 "use_case_id": device.use_case_id,
-                "user_id": user_uid,
-                "silhouette_score": device.silhouette_score,
-                "status": device.status,
+                "user_id" : user_uid,
+                "silhouette_score" : device.silhouette_score,
+                "status" : device.status,
             }
             for device in devices
         ]
