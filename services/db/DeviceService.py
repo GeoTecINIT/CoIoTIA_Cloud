@@ -29,7 +29,6 @@ class DeviceService:
             async with conn.cursor(row_factory=dict_row) as cur:
                 await cur.execute(query, (mac, user_uid,))
                 result = await cur.fetchone()
-                print(result)
                 return DeviceRead(**result)
     
     async def create_devices_use_case(self, devices, user_uid):
