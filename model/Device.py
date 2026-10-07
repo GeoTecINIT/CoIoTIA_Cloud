@@ -21,6 +21,8 @@ class DeviceCreate(Device):
 class DeviceRead(Device):
     user_id: str
     coi_id: int | None
+    use_case: str | None = None
+    coi: str | None = None
     last_connection: datetime | None
     last_value: float | None
     total_ram: float | None

@@ -20,6 +20,13 @@ async def get_devices_of_use_case(request: Request, use_case_id: int, token: str
     devices = await service.get_devices_of_use_case(use_case_id, uid)
     return devices
 
+@router.get("/getDevice", response_model=DeviceRead)
+async def get_device(request: Request, mac: str, token: str = Depends(get_token)):
+    service = request.app.state.device_service
+    uid = request.app.state.firebase.verify_firebase_token(token)
+    device = await service.get_device(mac, uid)
+    return device
+
 @router.post("/createInUseCase")
 async def create_devices_use_case(request: Request, payload: list[DeviceCreate], token: str = Depends(get_token)):
     device_service = request.app.state.device_service

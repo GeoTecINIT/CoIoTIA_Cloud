@@ -23,6 +23,15 @@ class DeviceService:
                 result = await cur.fetchall()
                 return [DeviceRead(**row) for row in result]
 
+    async def get_device(self, mac, user_uid):
+        query = "SELECT d.*, uc.name AS use_case, c.name AS coi FROM devices AS d LEFT JOIN use_cases AS uc ON d.use_case_id = uc.id LEFT JOIN coi AS c ON d.coi_id = c.id WHERE d.mac = %s AND d.user_id = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor(row_factory=dict_row) as cur:
+                await cur.execute(query, (mac, user_uid,))
+                result = await cur.fetchone()
+                print(result)
+                return DeviceRead(**result)
+    
     async def create_devices_use_case(self, devices, user_uid):
         query = """
             INSERT INTO devices (mac, name, lat, lon, virtual, mobile, federated, analysis_type, data_type, use_case_id, user_id, silhouette_score, status)
