@@ -28,3 +28,21 @@ class FogService:
         async with self.pool.connection() as conn:
             async with conn.cursor() as cur:
                 await cur.execute(query, (cpu, ram, disk, name))
+
+    async def check_edge_in_fog(self, fog_id, mac):
+        query = """
+            SELECT EXISTS(
+                SELECT 1
+                FROM fog AS f
+                JOIN coi AS c ON f.id = c.fog_id
+                JOIN devices AS d ON c.id = d.coi_id
+                WHERE f.id = %s
+                AND d.mac = %s
+            )
+
+        """
+        async with self.pool.connection() as conn:
+            async with conn.cursor() as cur:
+                await cur.execute(query, (fog_id, mac))
+                result = await cur.fetchone()
+                return result[0]

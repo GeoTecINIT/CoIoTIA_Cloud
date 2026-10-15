@@ -35,3 +35,24 @@ async def create_devices_use_case(request: Request, payload: list[DeviceCreate],
     use_case_id = payload[0].use_case_id
     await device_service.create_devices_use_case(payload, uid)
     await coi_service.set_cois_of_devices_use_case(use_case_id)
+
+
+@router.post("/setStatus")
+async def set_status(request: Request):
+    data = await request.json()
+    service = request.app.state.device_service
+    await service.set_status(data["mac"], data["status"])
+
+
+@router.post("/setVitals")
+async def set_vitals(request: Request):
+    data = await request.json()
+    service = request.app.state.device_service
+    await service.set_vitals(data["mac"], data["total_ram"], data["used_ram"])
+
+
+@router.post("/setPosition")
+async def set_position(request: Request):
+    data = await request.json()
+    service = request.app.state.device_service
+    await service.set_vitals(data["mac"], data["lat"], data["lon"])

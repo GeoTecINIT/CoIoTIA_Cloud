@@ -64,3 +64,26 @@ class DeviceService:
             async with conn.transaction():
                 async with conn.cursor() as cur:
                     await cur.executemany(query, params)
+
+
+    async def set_status(self, mac, status):
+        query = "UPDATE devices SET status = %s WHERE mac = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor() as cur:
+                await cur.execute(query, (status, mac))
+
+
+    async def set_vitals(self, mac, total_ram, used_ram):
+        query = "UPDATE devices SET total_ram = %s, used_ram = %s, last_connection = NOW() WHERE mac = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor() as cur:
+                await cur.execute(query, (total_ram, used_ram, mac))
+
+
+    async def set_position(self, mac, lat, lon):
+        query = "UPDATE devices SET lat = %s, lon = %s, last_connection = NOW() WHERE mac = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor() as cur:
+                await cur.execute(query, (lat, lon, mac))
+
+    

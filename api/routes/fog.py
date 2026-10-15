@@ -14,3 +14,10 @@ async def get_domains(request: Request):
 async def get_domains(request: Request, fog_id: int):
     service = request.app.state.fog_service
     return await service.get_vitals(fog_id)
+
+
+@router.get("/checkEdge", response_model=bool)
+async def check_edge(request: Request, fog_id: int, mac: str):
+    service = request.app.state.fog_service
+    return await service.check_edge_in_fog(fog_id, mac)
+

@@ -89,10 +89,12 @@ class MQTTService:
         fog_info["last_updated"] = time.time()
         self.logger.info(f"Device {content_dict['NAME']} is online at {content_dict['IP']}")
 
+
     def __offline(self, fog_info, content_dict):
         device = content_dict["NAME"]
         fog_info["status"] = 0
         self.logger.info(f"Device {device} is offline")
+
 
     async def __status(self, fog_info, content_dict):
         fog_info["last_updated"] = time.time()
@@ -101,6 +103,5 @@ class MQTTService:
         fog_info["ram"] = content_dict.get("RAM")
         fog_info["disk"] = content_dict.get("Disk")
         await self.fog_service.set_vitals(content_dict.get('NAME'), content_dict.get('CPU'), content_dict.get('RAM'), content_dict.get('Disk'))
-        self.logger.info(f"Received metrics from {content_dict['NAME']}")
-
+        
     
