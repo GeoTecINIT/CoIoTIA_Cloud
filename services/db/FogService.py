@@ -29,6 +29,12 @@ class FogService:
             async with conn.cursor() as cur:
                 await cur.execute(query, (cpu, ram, disk, name))
 
+    async def set_status(self, status, name):
+        query = "UPDATE fog SET status = %s WHERE name = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor() as cur:
+                await cur.execute(query, (status, name))
+
     async def check_edge_in_fog(self, fog_id, mac):
         query = """
             SELECT EXISTS(

@@ -4,13 +4,12 @@ import time
 
 
 class MQTTService:
-    def __init__(self, broker, port, event_queue, logger, fog_devices, fog_service):
+    def __init__(self, broker, port, event_queue, logger, fog_service):
         self.broker = broker
         self.port = port
 
         self.event_queue = event_queue
         self.logger = logger
-        self.fog_devices = fog_devices
         self.fog_service = fog_service
 
         self.client = None
@@ -61,47 +60,38 @@ class MQTTService:
         code = split_content[0]
         content_dict = dict(item.split(":") for item in content.split(";")[1:])
 
-        fog_info = self.fog_devices.get(content_dict["NAME"])
-        if fog_info is None:
-            return
-
         if code == "ONLINE":
-            self.__online(fog_info, content_dict)
+            await self.__online(content_dict)
         elif code == "OFFLINE":
-            self.__offline(fog_info, content_dict)
+            await self.__offline(content_dict)
         else:
-            await self.__status(fog_info, content_dict)
+            await self.__status(content_dict)
 
-        await self.event_queue.put(
-            {
-                device: {
-                    "id": data["id"],
-                    "ip": data["ip"],
-                    "status": data["status"],
-                }
-                for device, data in self.fog_devices.items()
-            }
-        )
-
-
-    def __online(self, fog_info, content_dict):
-        fog_info["status"] = 1
-        fog_info["last_updated"] = time.time()
-        self.logger.info(f"Device {content_dict['NAME']} is online at {content_dict['IP']}")
+        # await self.event_queue.put(
+        #     {
+        #         device: {
+        #             "id": data["id"],
+        #             "ip": data["ip"],
+        #             "status": data["status"],
+        #         }
+        #         for device, data in self.fog_devices.items()
+        #     }
+        # )
 
 
-    def __offline(self, fog_info, content_dict):
-        device = content_dict["NAME"]
-        fog_info["status"] = 0
-        self.logger.info(f"Device {device} is offline")
+    async def __online(self, content_dict):
+        name = content_dict.get('NAME')
+        await self.fog_service.set_status("running", name)
+        self.logger.info(f"Device {name} is online")
 
 
-    async def __status(self, fog_info, content_dict):
-        fog_info["last_updated"] = time.time()
-        fog_info["status"] = 1
-        fog_info["cpu"] = content_dict.get("CPU")
-        fog_info["ram"] = content_dict.get("RAM")
-        fog_info["disk"] = content_dict.get("Disk")
+    async def __offline(self, content_dict):
+        name = content_dict.get('NAME')
+        await self.fog_service.set_status("stopped", name)
+        self.logger.info(f"Device {name} is offline")
+        
+
+    async def __status(self, content_dict):
         await self.fog_service.set_vitals(content_dict.get('NAME'), content_dict.get('CPU'), content_dict.get('RAM'), content_dict.get('Disk'))
         
     

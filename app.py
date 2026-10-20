@@ -72,24 +72,24 @@ async def lifespan(app: FastAPI):
     app.state.types_service = TypeService(pool)
     
     app.state.event_queue = Queue(maxsize=5)
-    app.state.fog_devices, app.state.fog_id_name = app.state.firebase.get_fog()
-    app.state.logger.info(f"Loaded {len(app.state.fog_devices)} fog devices from Firestore")
-    app.state.mqtt = MQTTService(os.getenv("MQTT_BROKER", "aiotserver.uji.es"), int(os.getenv("MQTT_PORT", 1883)), app.state.event_queue, app.state.logger, app.state.fog_devices, app.state.fog_service)
+    # app.state.fog_devices, app.state.fog_id_name = app.state.firebase.get_fog()
+    # app.state.logger.info(f"Loaded {len(app.state.fog_devices)} fog devices from Firestore")
+    app.state.mqtt = MQTTService(os.getenv("MQTT_BROKER", "aiotserver.uji.es"), int(os.getenv("MQTT_PORT", 1883)), app.state.event_queue, app.state.logger, app.state.fog_service)
 
     await app.state.mqtt.connect()
-    app.state.check_online_task = asyncio.create_task(check_online_task(app))
+    # app.state.check_online_task = asyncio.create_task(check_online_task(app))
     
     yield
 
     await pool.close()
     
-    task = app.state.check_online_task
-    if task and not task.done():
-        task.cancel()
-        try:
-            await task
-        except asyncio.CancelledError:
-            pass
+    # task = app.state.check_online_task
+    # if task and not task.done():
+    #     task.cancel()
+    #     try:
+    #         await task
+    #     except asyncio.CancelledError:
+    #         pass
 
     await app.state.mqtt.disconnect()
 

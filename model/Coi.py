@@ -13,6 +13,13 @@ class Coi(BaseModel):
     use_case_id: int
     fog_id: int | None
 
+
+class CoiWithUseCase(BaseModel):
+    id: int
+    name: str
+    use_case: str
+    
+
 class Centroid(BaseModel):
     lat: float
     lon: float

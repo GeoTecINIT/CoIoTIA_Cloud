@@ -10,13 +10,20 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
 
     request.app.state.logger.info(f"Connection to {x_target_ip}/{path}")
     async with httpx.AsyncClient() as client:
-        if request.method == "GET":
+        if request.method in ["GET", "DELETE"]:
             try:
-                resp = await client.get(
-                    f"{x_target_ip}/{path}",
-                    params=dict(request.query_params),
-                    headers=internal_headers,
-                )
+                if request.method == "GET":
+                    resp = await client.get(
+                        f"{x_target_ip}/{path}",
+                        params=dict(request.query_params),
+                        headers=internal_headers,
+                    )
+                else:
+                   resp = await client.delete(
+                        f"{x_target_ip}/{path}",
+                        params=dict(request.query_params),
+                        headers=internal_headers,
+                    ) 
             except httpx.ConnectTimeout:
                 raise HTTPException(status_code=504, detail="Timeout connecting to fog")
             except httpx.ConnectError:
@@ -33,17 +40,25 @@ async def forward_request(path: str, request: Request, x_target_ip: str, files=N
                 if not hasattr(value, "read")
             }
 
-            kwargs = {"data": form_data}
+            kwargs = {"data": form_data, "params": request.query_params}
             if files:
                 kwargs["files"] = files
 
-            try: 
-                resp = await client.post(
-                    f"{x_target_ip}/{path}",
-                    **kwargs,
-                    headers=internal_headers,
-                    timeout=30
-                )
+            try:
+                if request.method == "POST":
+                    resp = await client.post(
+                        f"{x_target_ip}/{path}",
+                        **kwargs,
+                        headers=internal_headers,
+                        timeout=30
+                    )
+                else:
+                    resp = await client.put(
+                        f"{x_target_ip}/{path}",
+                        **kwargs,
+                        headers=internal_headers,
+                        timeout=30
+                    )
             except httpx.ConnectTimeout:
                 raise HTTPException(status_code=504, detail="Timeout connecting to fog")
             except httpx.ConnectError:

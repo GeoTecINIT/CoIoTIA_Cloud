@@ -3,7 +3,7 @@ from typing import Any
 from fastapi import APIRouter, Depends, Request
 from api.auth import get_token
 
-from model.Coi import Coi, Centroid
+from model.Coi import Coi, CoiWithUseCase, Centroid
 
 router = APIRouter()
 
@@ -22,7 +22,12 @@ async def create_devices_use_case(request: Request, use_case_id: int, geojson: d
     await service.create_cois_use_case(geometries, properties, use_case_id)
 
 
-@router.get("/list", response_model=list[Coi])
+@router.get("/list", response_model=list[CoiWithUseCase])
+async def get_cois_use_case(request: Request):
+    service = request.app.state.coi_service
+    return await service.list_cois()
+
+@router.get("/listUseCase", response_model=list[Coi])
 async def get_cois_use_case(request: Request, use_case_id: int):
     service = request.app.state.coi_service
     return await service.list_cois_use_case(use_case_id)

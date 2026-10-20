@@ -2,7 +2,7 @@ from psycopg_pool import AsyncConnectionPool
 from psycopg.rows import dict_row
 import json
 
-from model.Coi import Coi, Centroid
+from model.Coi import Coi, CoiWithUseCase, Centroid
 
 class CoiService:
     def __init__(self, pool: AsyncConnectionPool):
@@ -36,6 +36,15 @@ class CoiService:
                     await cur.executemany(query, params)
 
 
+    async def list_cois(self):
+        query = "SELECT c.id, c.name, uc.name AS use_case FROM coi AS c JOIN use_cases AS uc ON c.use_case_id = uc.id"
+        async with self.pool.connection() as conn:
+            async with conn.cursor(row_factory=dict_row) as cur:
+                await cur.execute(query)
+                result = await cur.fetchall()
+                return [CoiWithUseCase(**row) for row in result]
+
+    
     async def list_cois_use_case(self, use_case_id):
         query = "SELECT id, name, ST_AsGeoJSON(geom)::json AS geom, silhouette_score, use_case_id, fog_id FROM coi WHERE use_case_id = %s"
         async with self.pool.connection() as conn:
