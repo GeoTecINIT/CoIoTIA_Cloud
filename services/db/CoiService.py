@@ -46,7 +46,7 @@ class CoiService:
 
     
     async def list_cois_use_case(self, use_case_id):
-        query = "SELECT id, name, ST_AsGeoJSON(geom)::json AS geom, silhouette_score, use_case_id, fog_id FROM coi WHERE use_case_id = %s"
+        query = "SELECT c.id, c.name, ST_AsGeoJSON(c.geom)::json AS geom, c.silhouette_score, c.use_case_id, c.fog_id, f.ip AS fog_ip FROM coi AS c JOIN fog AS f ON c.fog_id = f.id WHERE use_case_id = %s"
         async with self.pool.connection() as conn:
             async with conn.cursor(row_factory=dict_row) as cur:
                 await cur.execute(query, (use_case_id,))

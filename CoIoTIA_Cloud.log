@@ -8899,3 +8899,126 @@
 2026-10-20 12:14:17,761 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
 2026-10-20 12:15:27,144 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
 2026-10-20 12:17:04,446 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-10-20 13:31:28,018 [ERROR] CoIoTIA_Cloud: Listener error: Disconnected during message iteration
+2026-10-20 13:41:55,128 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-20 13:41:56,835 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-20 13:41:56,835 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-20 13:41:56,835 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-20 13:41:56,836 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-20 13:41:56,845 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-20 13:43:03,504 [INFO] CoIoTIA_Cloud: Device Fog Local is offline
+2026-10-20 13:43:08,763 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-20 13:47:06,040 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-10-20 13:48:54,967 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-10-20 13:49:32,455 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/list
+2026-10-20 13:52:29,911 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/list
+2026-10-20 13:53:41,064 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/list
+2026-10-21 14:06:14,384 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-21 14:06:14,385 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-21 14:06:14,385 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-21 14:06:14,385 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-21 14:06:14,395 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-21 14:06:57,307 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-21 14:07:51,715 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-21 14:12:17,245 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-21 14:14:46,410 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-10-21 14:15:22,051 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-10-21 14:15:54,795 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-21 14:15:59,281 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-21 14:16:01,827 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-10-21 14:16:37,110 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-21 14:16:41,723 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-21 14:16:46,218 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-10-21 14:18:22,065 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-10-21 14:18:26,377 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/delete
+2026-10-21 14:18:56,489 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-10-21 14:19:14,370 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-10-21 14:20:51,833 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-10-21 14:20:54,696 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/delete
+2026-10-21 14:21:12,410 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-10-21 14:23:48,262 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-21 14:23:52,785 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/delete
+2026-10-21 14:24:00,437 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-10-21 14:24:03,243 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/delete
+2026-10-21 14:24:21,117 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-10-21 14:24:51,625 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/update
+2026-10-21 14:25:07,560 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/delete
+2026-10-26 11:27:26,232 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 11:27:26,232 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 11:27:26,232 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 11:27:26,233 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 11:27:26,243 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 11:50:02,270 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 11:50:03,065 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 11:50:03,065 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 11:50:03,065 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 11:50:03,065 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 11:50:03,074 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 11:51:11,519 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 11:51:12,365 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 11:51:12,365 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 11:51:12,365 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 11:51:12,365 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 11:51:12,375 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 11:53:12,607 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 11:53:13,435 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 11:53:13,435 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 11:53:13,435 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 11:53:13,435 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 11:53:13,444 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 12:03:25,472 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 12:03:26,304 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:03:26,304 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 12:03:26,304 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:03:26,304 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 12:03:26,313 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 12:05:11,224 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 12:05:12,019 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:05:12,019 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 12:05:12,019 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:05:12,019 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 12:05:12,029 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 12:05:53,599 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 12:05:54,403 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:05:54,403 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 12:05:54,403 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:05:54,403 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 12:05:54,413 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 12:06:12,243 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 12:06:13,068 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:06:13,068 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 12:06:13,068 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:06:13,068 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 12:06:13,078 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 12:06:36,723 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 12:06:37,560 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:06:37,560 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 12:06:37,560 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:06:37,561 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 12:06:37,569 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 12:20:15,731 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-10-26 12:20:16,544 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:20:16,544 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-10-26 12:20:16,544 [INFO] CoIoTIA_Cloud: ===================================
+2026-10-26 12:20:16,544 [INFO] CoIoTIA_Cloud: Listener task created
+2026-10-26 12:20:16,554 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-10-26 12:55:19,958 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-26 12:55:22,435 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 12:55:36,213 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-26 12:55:46,624 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-26 12:55:48,214 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 12:57:22,155 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-26 12:57:25,965 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-26 12:57:28,390 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 12:58:53,496 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-26 12:58:57,342 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-26 13:00:57,479 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-26 13:01:01,341 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-26 13:01:43,066 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-26 13:01:47,049 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-26 13:01:53,483 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-26 13:02:57,136 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-26 13:03:00,664 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:03:27,646 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-10-26 13:03:31,392 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-10-26 13:03:36,972 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference

@@ -1,6 +1,7 @@
-from fastapi import APIRouter, Depends, Request, Response, Header
-from fastapi.responses import JSONResponse
+from fastapi import APIRouter, Depends, Request, Header
 from api.auth import get_token
+
+from api.utils import forward_request
 
 from model.Device import DeviceCreate, DeviceRead
 
@@ -56,3 +57,8 @@ async def set_position(request: Request):
     data = await request.json()
     service = request.app.state.device_service
     await service.set_vitals(data["mac"], data["lat"], data["lon"])
+
+
+@router.get("/lastInference")
+async def get_last_inference(request: Request, x_target_ip: str = Header(...), token: str = Depends(get_token)):
+    return await forward_request("inferences/lastInference", request, x_target_ip)
