@@ -9022,3 +9022,18 @@
 2026-10-26 13:03:27,646 [INFO] CoIoTIA_Cloud: Device Local is offline
 2026-10-26 13:03:31,392 [INFO] CoIoTIA_Cloud: Device Local is online
 2026-10-26 13:03:36,972 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:07:29,428 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:08:53,072 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:14:44,670 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:14:47,677 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:14:55,864 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:15:44,351 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:16:02,041 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:18:04,900 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:18:26,165 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:19:03,262 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:19:37,021 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 13:57:33,396 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/list
+2026-10-26 13:59:19,520 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 14:02:25,444 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
+2026-10-26 14:33:35,654 [ERROR] CoIoTIA_Cloud: Listener error: Disconnected during message iteration
