@@ -11,6 +11,12 @@ async def list_models(request: Request, x_target_ip: str = Header(...), token: s
     uid = request.app.state.firebase.verify_firebase_token(token)
     return await forward_request("models/list", request, x_target_ip, uid=uid)
 
+
+@router.get("/listCoi")
+async def list_models_of_coi(request: Request, x_target_ip: str = Header(...), token: str = Depends(get_token)):
+    uid = request.app.state.firebase.verify_firebase_token(token)
+    return await forward_request("models/listCoi", request, x_target_ip, uid=uid)
+
 @router.post("/upload")
 async def upload_model(request: Request, x_target_ip: str = Header(...), token: str = Depends(get_token), model: UploadFile = File(...), code: UploadFile = File(...)):
     uid = request.app.state.firebase.verify_firebase_token(token)

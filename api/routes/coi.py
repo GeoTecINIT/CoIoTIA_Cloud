@@ -36,3 +36,9 @@ async def get_cois_use_case(request: Request, use_case_id: int):
 async def get_use_case_centroid(request: Request, use_case_id: int):
     service = request.app.state.coi_service
     return await service.get_use_case_centroid(use_case_id)
+
+
+@router.delete("/deleteInUseCase")
+async def delete_cois_use_case(request: Request, use_case_id: int):
+    service = request.app.state.coi_service
+    await service.delete_cois_use_case(use_case_id)

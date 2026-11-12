@@ -9037,3 +9037,468 @@
 2026-10-26 13:59:19,520 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
 2026-10-26 14:02:25,444 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/inferences/lastInference
 2026-10-26 14:33:35,654 [ERROR] CoIoTIA_Cloud: Listener error: Disconnected during message iteration
+2026-11-02 12:52:21,291 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-02 12:52:21,291 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-02 12:52:21,291 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-02 12:52:21,291 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-02 12:52:21,304 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-02 13:31:11,532 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-02 13:31:12,477 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-02 13:31:12,478 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-02 13:31:12,478 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-02 13:31:12,478 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-02 13:31:12,490 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-02 13:50:22,708 [ERROR] CoIoTIA_Cloud: Listener error: Disconnected during message iteration
+2026-11-03 11:11:11,508 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-03 11:11:11,508 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-03 11:11:11,508 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-03 11:11:11,509 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-03 11:11:11,519 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-03 11:11:42,614 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/list
+2026-11-03 11:11:44,669 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-11-03 11:12:09,567 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-11-03 11:12:26,765 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-11-03 11:12:28,541 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-11-03 11:12:31,069 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-11-03 13:32:10,373 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-03 13:32:10,373 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-03 13:32:10,374 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-03 13:32:10,374 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-03 13:32:10,384 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 08:26:54,716 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 08:26:54,716 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 08:26:54,716 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 08:26:54,716 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 08:26:54,726 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 09:07:18,427 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 09:07:19,235 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:07:19,235 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 09:07:19,235 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:07:19,236 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 09:07:19,245 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 09:08:55,898 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 09:08:56,728 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:08:56,728 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 09:08:56,728 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:08:56,729 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 09:08:56,739 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 09:55:49,093 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 09:55:49,842 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:55:49,843 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 09:55:49,843 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:55:49,843 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 09:55:49,853 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 09:56:33,978 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 09:56:34,805 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:56:34,805 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 09:56:34,805 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:56:34,806 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 09:56:34,815 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 09:57:45,977 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 09:57:46,778 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:57:46,778 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 09:57:46,778 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:57:46,778 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 09:57:46,787 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 09:58:27,770 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 09:58:28,618 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:58:28,618 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 09:58:28,618 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:58:28,618 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 09:58:28,627 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 09:59:14,127 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 09:59:14,967 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:59:14,967 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 09:59:14,967 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 09:59:14,967 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 09:59:14,977 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 10:00:11,993 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 10:00:16,437 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 10:00:16,437 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 10:00:16,437 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 10:00:16,437 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 10:00:16,446 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 10:00:49,207 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 10:00:50,062 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 10:00:50,062 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 10:00:50,062 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 10:00:50,062 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 10:00:50,071 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 10:07:37,003 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 10:08:10,894 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 10:08:10,894 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 10:08:10,894 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 10:08:10,894 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 10:08:10,904 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 10:08:14,302 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 10:08:15,116 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 10:08:15,116 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 10:08:15,116 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 10:08:15,116 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 10:08:15,126 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 11:44:03,568 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 11:44:04,405 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:44:04,405 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 11:44:04,405 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:44:04,405 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 11:44:04,415 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 11:48:36,104 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 11:48:36,922 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:48:36,922 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 11:48:36,922 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:48:36,922 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 11:48:36,931 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 11:48:46,847 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 11:48:47,664 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:48:47,664 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 11:48:47,664 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:48:47,664 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 11:48:47,674 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 11:52:55,038 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 11:52:55,880 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:52:55,880 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 11:52:55,880 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:52:55,880 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 11:52:55,891 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 11:54:31,785 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 11:54:32,556 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:54:32,556 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 11:54:32,557 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:54:32,557 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 11:54:32,567 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 11:54:41,881 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 11:54:42,706 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:54:42,706 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 11:54:42,706 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:54:42,706 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 11:54:42,717 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 11:55:23,405 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 11:55:24,218 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:55:24,219 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 11:55:24,219 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 11:55:24,219 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 11:55:24,229 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 12:33:06,568 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-04 12:34:15,620 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 12:34:16,440 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:34:16,440 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 12:34:16,440 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:34:16,440 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 12:34:16,450 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 12:35:24,238 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 12:35:36,243 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:35:36,243 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 12:35:36,243 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:35:36,244 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 12:35:36,254 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 12:44:57,875 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 12:44:58,725 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:44:58,725 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 12:44:58,725 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:44:58,725 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 12:44:58,735 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 12:47:28,782 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 12:47:29,618 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:47:29,618 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 12:47:29,618 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:47:29,618 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 12:47:29,627 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 12:49:33,824 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 12:49:34,659 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:49:34,659 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 12:49:34,659 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:49:34,660 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 12:49:34,669 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 12:58:06,369 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 12:58:07,169 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:58:07,169 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 12:58:07,169 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 12:58:07,169 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 12:58:07,179 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 13:01:10,671 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 13:01:11,507 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:01:11,507 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 13:01:11,507 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:01:11,507 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 13:01:11,516 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 13:01:19,840 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 13:01:20,659 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:01:20,659 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 13:01:20,659 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:01:20,659 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 13:01:20,668 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 13:02:05,008 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 13:02:05,839 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:02:05,839 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 13:02:05,839 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:02:05,840 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 13:02:05,849 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 13:03:13,529 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 13:03:14,375 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:03:14,375 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 13:03:14,375 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:03:14,375 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 13:03:14,385 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 13:03:29,410 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 13:03:30,269 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:03:30,269 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 13:03:30,269 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:03:30,269 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 13:03:30,278 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 13:04:10,691 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 13:04:11,519 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:04:11,519 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 13:04:11,519 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:04:11,519 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 13:04:11,528 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-04 13:18:41,077 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-04 13:18:41,910 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:18:41,910 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-04 13:18:41,910 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-04 13:18:41,910 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-04 13:18:41,919 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 09:08:17,612 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 09:08:17,613 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 09:08:17,613 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 09:08:17,613 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 09:08:17,624 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 09:08:36,492 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 09:14:24,129 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/list
+2026-11-11 10:10:00,624 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 10:10:01,464 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 10:10:01,465 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 10:10:01,465 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 10:10:01,465 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 10:10:01,474 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 10:10:04,272 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 10:10:05,096 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 10:10:05,096 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 10:10:05,096 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 10:10:05,097 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 10:10:05,106 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 10:10:10,615 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 10:10:11,434 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 10:10:11,434 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 10:10:11,434 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 10:10:11,434 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 10:10:11,443 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 11:17:28,511 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 11:17:34,191 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/list
+2026-11-11 11:17:35,646 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-11-11 11:17:39,550 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 11:17:41,982 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/listCoi
+2026-11-11 11:17:44,654 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/2/models/listCoi
+2026-11-11 11:17:46,750 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 11:22:03,510 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 11:23:41,701 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/listCoi
+2026-11-11 11:24:38,381 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/2/models/listCoi
+2026-11-11 11:25:06,862 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/2/models/listCoi
+2026-11-11 11:27:23,741 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/listCoi
+2026-11-11 11:31:02,166 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 11:36:33,461 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 11:48:55,247 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:03:03,552 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:03:04,222 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:03:04,719 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:03:04,903 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:03:05,063 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:03:09,536 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:03:25,744 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:03:28,878 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:04:36,967 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:05:37,344 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:05:48,495 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:07:38,481 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 12:07:50,343 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/3/models/listCoi
+2026-11-11 12:09:38,327 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:09:49,913 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-11-11 12:14:12,503 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:14:43,623 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:16:49,703 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:17:01,943 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:18:05,833 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:18:37,975 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:21:37,744 [INFO] CoIoTIA_Cloud: Connection to https://aiotserver.uji.es/fog/1/models/listCoi
+2026-11-11 12:28:59,265 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 12:32:15,575 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-11-11 12:32:19,462 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 12:32:53,932 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-11-11 12:32:57,759 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 12:39:37,810 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/list
+2026-11-11 12:40:53,710 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-11-11 12:40:53,988 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-11-11 12:40:57,976 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 12:41:34,400 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 12:41:37,444 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-11-11 12:43:24,553 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-11-11 12:44:34,283 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 12:45:04,620 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-11-11 12:53:10,980 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-11-11 12:55:48,513 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-11-11 12:56:03,354 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-11-11 12:56:13,666 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 12:56:15,978 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-11-11 12:58:10,079 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-11-11 12:59:34,052 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 12:59:36,754 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/upload
+2026-11-11 13:11:53,880 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:11:54,719 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:11:54,720 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:11:54,720 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:11:54,720 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:11:54,730 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:12:21,170 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:12:24,218 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:12:24,218 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:12:24,218 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:12:24,218 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:12:24,228 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:15:11,593 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:15:12,396 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:15:12,397 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:15:12,397 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:15:12,397 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:15:12,407 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:15:55,674 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:15:56,463 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:15:56,463 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:15:56,463 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:15:56,463 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:15:56,472 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:16:48,150 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:16:48,913 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:16:48,913 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:16:48,913 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:16:48,913 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:16:48,923 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:17:05,844 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:17:06,668 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:17:06,668 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:17:06,668 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:17:06,668 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:17:06,677 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:18:11,556 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:18:12,371 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:18:12,371 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:18:12,371 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:18:12,371 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:18:12,381 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:22:27,743 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:22:28,569 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:22:28,569 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:22:28,569 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:22:28,570 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:22:28,580 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:35:45,604 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-11-11 13:35:50,563 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 13:35:55,573 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 13:37:46,970 [INFO] CoIoTIA_Cloud: Device Local is offline
+2026-11-11 13:37:52,643 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 13:38:56,253 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-11 13:40:11,149 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 13:46:42,526 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:46:43,309 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:46:43,309 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:46:43,309 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:46:43,309 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:46:43,318 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:47:28,627 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:47:29,474 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:47:29,474 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:47:29,474 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:47:29,474 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:47:29,484 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:47:38,400 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:47:39,208 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:47:39,208 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:47:39,208 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:47:39,208 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:47:39,217 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:48:25,629 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:48:26,421 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:48:26,421 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:48:26,421 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:48:26,421 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:48:26,430 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:48:35,644 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:48:36,422 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:48:36,422 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:48:36,423 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:48:36,423 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:48:36,432 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:49:06,213 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:49:07,034 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:49:07,034 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:49:07,034 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:49:07,034 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:49:07,043 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:50:00,985 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:50:01,800 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:50:01,800 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:50:01,800 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:50:01,800 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:50:01,810 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:50:36,086 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:50:36,855 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:50:36,855 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:50:36,855 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:50:36,856 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:50:36,865 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:50:41,974 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:50:42,799 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:50:42,799 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:50:42,799 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:50:42,799 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:50:42,808 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:54:05,753 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:54:06,571 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:54:06,571 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:54:06,571 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:54:06,571 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:54:06,580 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:54:20,011 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:54:20,797 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:54:20,797 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:54:20,797 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:54:20,797 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:54:20,807 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:55:48,646 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:55:49,458 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:55:49,458 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:55:49,458 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:55:49,458 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:55:49,467 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:56:27,268 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 13:56:28,114 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:56:28,114 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 13:56:28,114 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 13:56:28,114 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 13:56:28,124 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 13:56:40,429 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 13:59:38,764 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-11 14:02:40,885 [INFO] CoIoTIA_Cloud: Disconnected from MQTT broker
+2026-11-11 14:02:41,707 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 14:02:41,707 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-11 14:02:41,707 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-11 14:02:41,707 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-11 14:02:41,717 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-11 14:03:01,916 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:27:15,271 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-12 11:27:15,271 [INFO] CoIoTIA_Cloud:       STARTING COIOTIA CLOUD       
+2026-11-12 11:27:15,271 [INFO] CoIoTIA_Cloud: ===================================
+2026-11-12 11:27:15,271 [INFO] CoIoTIA_Cloud: Listener task created
+2026-11-12 11:27:15,283 [INFO] CoIoTIA_Cloud: Connected and subscribed
+2026-11-12 11:27:29,359 [INFO] CoIoTIA_Cloud: Device Local is online
+2026-11-12 11:28:30,959 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:32:40,597 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:35:09,349 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:35:38,437 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:35:43,757 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:35:52,997 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:36:16,797 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:38:58,709 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:42:50,037 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:44:07,421 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:46:27,669 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:52:28,549 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi
+2026-11-12 11:53:06,933 [INFO] CoIoTIA_Cloud: Connection to http://localhost:8001/models/listCoi

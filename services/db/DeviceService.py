@@ -1,6 +1,8 @@
 from psycopg_pool import AsyncConnectionPool
 from psycopg.rows import dict_row
 
+import httpx
+
 from model.Device import DeviceRead
 
 class DeviceService:
@@ -66,11 +68,44 @@ class DeviceService:
                     await cur.executemany(query, params)
 
 
+    async def create_virtual_devices(self, use_case_id, uid, production):
+        query = """
+                    SELECT d.mac, d.name, d.lat, d.lon, d.use_case_id, d.analysis_type, d.data_type, f.id AS fog_id, f.ip AS fog_ip
+                    FROM devices AS d JOIN coi AS c ON d.coi_id = c.id JOIN fog AS f ON c.fog_id = f.id
+                    WHERE d.use_case_id = %s AND d.virtual = TRUE
+                """
+        async with self.pool.connection() as conn:
+            async with conn.cursor(row_factory=dict_row) as cur:
+                await cur.execute(query, (use_case_id, ))
+                async for row in cur:
+                    data = {
+                        'mac' : row['mac'],
+                        'name' : row['name'],
+                        'use_case' : row['use_case_id'],
+                        'lat' : row['lat'],
+                        'lon' : row['lon'],
+                        'analysis_type' : row['analysis_type'],
+                        'data_type' : row['data_type']
+                    }
+                    if production:
+                        url = f'https://{row['fog_ip']}/fog/virtual/create'
+                    elif int(row['fog_id']) < 5:
+                        url = f'https://aiotserver.uji.es/fog/{row['fog_id']}/virtual/create'
+                    else:
+                        url = 'http://localhost:8001/virtual/create'
+                    r = httpx.post(url, headers={'x-user-uid' : uid}, data=data)
+
+
     async def set_status(self, mac, status):
-        query = "UPDATE devices SET status = %s WHERE mac = %s"
+        query = "UPDATE devices SET status = %s WHERE mac = %s RETURNING name"
         async with self.pool.connection() as conn:
             async with conn.cursor() as cur:
                 await cur.execute(query, (status, mac))
+                result = await cur.fetchone()
+                if result:
+                    name = result[0]
+                    return name
+                return None
 
 
     async def set_vitals(self, mac, total_ram, used_ram):
@@ -86,4 +121,10 @@ class DeviceService:
             async with conn.cursor() as cur:
                 await cur.execute(query, (lat, lon, mac))
 
+
+    async def delete_devices_use_case(self, use_case_id):
+        query = "DELETE FROM devices WHERE use_case_id = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor() as cur:
+                await cur.execute(query, (use_case_id, ))
     

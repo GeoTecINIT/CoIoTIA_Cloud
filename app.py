@@ -50,6 +50,7 @@ async def check_online_task(app: FastAPI):
 async def lifespan(app: FastAPI):
     app.state.logger = Logger("CoIoTIA_Cloud")
     app.state.firebase = FirebaseService()
+    app.state.production = os.getenv("PRODUCTION", "false").lower() == "true"
 
     app.state.logger.info("===================================")
     app.state.logger.info("      STARTING COIOTIA CLOUD       ")

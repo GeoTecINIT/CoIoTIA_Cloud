@@ -31,3 +31,10 @@ class UseCaseService:
                     )
                     row = await cur.fetchone()
                     return row[0]
+
+
+    async def delete_use_case(self, use_case_id):
+        query = "DELETE FROM use_cases WHERE id = %s"
+        async with self.pool.connection() as conn:
+            async with conn.cursor(row_factory=dict_row) as cur:
+                await cur.execute(query, (use_case_id,))

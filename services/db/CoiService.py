@@ -10,14 +10,15 @@ class CoiService:
 
     async def create_cois_use_case(self, geometries, properties, use_case_id):
         query = """
-            INSERT INTO coi (name, geom, use_case_id)
+            INSERT INTO coi (name, geom, use_case_id, fog_id)
             VALUES(
                 %(name)s,
                 ST_SetSRID(
                     ST_GeomFromGeoJSON(%(geom)s),
                     4326
                 ),
-                %(use_case_id)s
+                %(use_case_id)s,
+                %(fog_id)s
             )
         """
 
@@ -25,7 +26,8 @@ class CoiService:
             {
                 "name" : p["name"],
                 "geom" : json.dumps(geom),
-                "use_case_id" : use_case_id
+                "use_case_id" : use_case_id,
+                "fog_id" : p["fog"]
             }
             for geom, p in zip(geometries, properties)
         ]
@@ -68,12 +70,19 @@ class CoiService:
             UPDATE devices AS d
             SET coi_id = c.id
             FROM coi AS c
-            WHERE d.use_case_id = %s
+            WHERE (d.use_case_id = %s AND c.use_case_id = %s)
             AND ST_Within(
                     ST_SetSRID(ST_MakePoint(d.lon, d.lat), 4326),
                     c.geom
                 )
         """
+        async with self.pool.connection() as conn:
+            async with conn.cursor() as cur:
+                await cur.execute(query, (use_case_id, use_case_id))
+
+
+    async def delete_cois_use_case(self, use_case_id):
+        query = "DELETE FROM coi WHERE use_case_id = %s"
         async with self.pool.connection() as conn:
             async with conn.cursor() as cur:
                 await cur.execute(query, (use_case_id, ))

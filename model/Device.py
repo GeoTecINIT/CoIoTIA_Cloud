@@ -15,9 +15,6 @@ class Device(BaseModel):
     silhouette_score: float | None = None
     status: str = "stopped"
 
-class DeviceCreate(Device):
-    pass
-
 class DeviceRead(Device):
     user_id: str
     coi_id: int | None

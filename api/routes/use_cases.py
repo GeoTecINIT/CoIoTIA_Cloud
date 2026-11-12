@@ -19,3 +19,8 @@ async def create_use_case(request: Request, payload: UseCaseCreate, token: str =
     uid = request.app.state.firebase.verify_firebase_token(token)
     id = await service.create_use_case(payload, uid)
     return {"id": id}
+
+@router.delete("/delete")
+async def delete_use_case(request: Request, use_case_id: int):
+    service = request.app.state.use_case_service
+    await service.delete_use_case(use_case_id)
