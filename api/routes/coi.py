@@ -32,6 +32,11 @@ async def get_cois_use_case(request: Request, use_case_id: int):
     service = request.app.state.coi_service
     return await service.list_cois_use_case(use_case_id)
 
+@router.get("/listFog", response_model=list[Coi])
+async def get_cois_use_case(request: Request, use_case_id: int, fog_id: int):
+    service = request.app.state.coi_service
+    return await service.list_cois_fog(use_case_id, fog_id)
+
 @router.get("/centroid", response_model=Centroid)
 async def get_use_case_centroid(request: Request, use_case_id: int):
     service = request.app.state.coi_service
